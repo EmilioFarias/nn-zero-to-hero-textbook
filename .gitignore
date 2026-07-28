@@ -1,0 +1,17 @@
+# datasets (download them with the commands in the README)
+names.txt
+input.txt
+*.txt.gz
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# training artefacts
+*.log
+*.pt
+*.bin
+edu_fineweb*/
