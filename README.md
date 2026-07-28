@@ -2,7 +2,7 @@
 
 A written, runnable edition of [Andrej Karpathy's *Neural Networks: Zero to Hero*](https://karpathy.ai/zero-to-hero.html).
 
-**[Read it online →](https://claude.ai/code/artifact/a9ecca2e-da63-4c2c-a510-51a41cf3fff0)** · or open [`textbook.md`](textbook.md) · or work through the [notebooks](notebooks/)
+**[Read it online →](https://emiliofarias.github.io/nn-zero-to-hero-textbook/)** · or open [`textbook.md`](textbook.md) · or work through the [notebooks](notebooks/)
 
 ## Why I made this
 
