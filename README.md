@@ -36,8 +36,8 @@ The nine chapters follow the nine lectures: micrograd and backpropagation, the b
 ## Getting started
 
 ```bash
-git clone https://github.com/EmilioFarias/zero-to-hero-textbook
-cd zero-to-hero-textbook
+git clone https://github.com/EmilioFarias/nn-zero-to-hero-textbook
+cd nn-zero-to-hero-textbook
 python3 -m venv .venv && source .venv/bin/activate
 pip install torch numpy matplotlib jupyter tiktoken
 
