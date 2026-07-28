@@ -22,6 +22,8 @@
     --muted: #63727e;
     --rule: #dde3e9;
     --rule-soft: #e9edf1;
+    --purple: #6b4fa8;
+    --purple-soft: rgba(107,79,168,.10);
     --green: #2e7d5b;
     --green-soft: rgba(46,125,91,.10);
     --code-bg: #eef1f5;
@@ -51,7 +53,11 @@
       --muted: #8797a3;
       --rule: #24313c;
       --rule-soft: #1b252e;
-      --green: #6bbf95;
+      --purple: #a893d8;
+      --purple-soft: rgba(168,147,216,.14);
+      --purple: #a893d8;
+    --purple-soft: rgba(168,147,216,.14);
+    --green: #6bbf95;
       --green-soft: rgba(107,191,149,.12);
       --code-bg: #0f161d;
       --code-fg: #d3dae1;
@@ -77,6 +83,8 @@
     --muted: #8797a3;
     --rule: #24313c;
     --rule-soft: #1b252e;
+    --purple: #a893d8;
+    --purple-soft: rgba(168,147,216,.14);
     --green: #6bbf95;
     --green-soft: rgba(107,191,149,.12);
     --code-bg: #0f161d;
@@ -102,6 +110,8 @@
     --muted: #63727e;
     --rule: #dde3e9;
     --rule-soft: #e9edf1;
+    --purple: #6b4fa8;
+    --purple-soft: rgba(107,79,168,.10);
     --green: #2e7d5b;
     --green-soft: rgba(46,125,91,.10);
     --code-bg: #eef1f5;
@@ -247,6 +257,7 @@
   }
   .tag-src  { background: var(--accent-soft); color: var(--accent); }
   .tag-ok   { background: var(--green-soft); color: var(--green); }
+  .tag-book { background: var(--purple-soft); color: var(--purple); }
   .tag-std  { background: var(--rule-soft); color: var(--muted); }
   .tag-read { background: var(--amber-soft); color: var(--amber); }
   .tag-unc  { background: transparent; color: var(--amber); border: 1px dashed var(--amber); }
@@ -395,17 +406,20 @@
 <li class="nav-sec"><a href="#chapter-7--lets-build-gpt"><span class="nav-num">7</span>Let&#x27;s build GPT</a></li>
 <li class="nav-sec"><a href="#chapter-8--the-gpt-tokenizer"><span class="nav-num">8</span>the GPT tokenizer</a></li>
 <li class="nav-sec"><a href="#chapter-9--reproducing-gpt-2-124m"><span class="nav-num">9</span>reproducing GPT-2 (124M)</a></li>
-<li class="nav-part"><a href="#part-iv--why-it-matters">IV — WHY IT MATTERS</a></li>
-<li class="nav-sec"><a href="#41-what-you-can-do-afterward">4.1 What you can do afterward</a></li>
-<li class="nav-sec"><a href="#42-who-uses-this">4.2 Who uses this</a></li>
-<li class="nav-sec"><a href="#43-the-competitive-landscape">4.3 The competitive landscape</a></li>
-<li class="nav-sec"><a href="#44-limitations-stated-fairly">4.4 Limitations, stated fairly</a></li>
-<li class="nav-sec"><a href="#45-a-study-plan-that-works">4.5 A study plan that works</a></li>
-<li class="nav-part"><a href="#part-v--explaining-it-to-others">V — EXPLAINING IT TO OTHERS</a></li>
-<li class="nav-sec"><a href="#51-the-30-second-version-for-anyone">5.1 The 30-second version, for anyone</a></li>
-<li class="nav-sec"><a href="#52-teaching-a-six-year-old-as-a-script">5.2 Teaching a six-year-old, as a script</a></li>
-<li class="nav-sec"><a href="#53-talking-to-a-specialist">5.3 Talking to a specialist</a></li>
-<li class="nav-sec"><a href="#54-the-2-to-3-minute-version-for-a-curious-colleague">5.4 The 2-to-3-minute version, for a curious colleague</a></li>
+<li class="nav-part"><a href="#part-iv--beyond-the-course">IV — BEYOND THE COURSE</a></li>
+<li class="nav-sec"><a href="#chapter-10--fine-tuning-from-document-completer-to-assistant"><span class="nav-num">10</span>Fine-tuning</a></li>
+<li class="nav-sec"><a href="#chapter-11--reinforcement-learning-practice-instead-of-imitation"><span class="nav-num">11</span>Reinforcement learning</a></li>
+<li class="nav-part"><a href="#part-v--why-it-matters">V — WHY IT MATTERS</a></li>
+<li class="nav-sec"><a href="#51-what-you-can-do-afterward">5.1 What you can do afterward</a></li>
+<li class="nav-sec"><a href="#52-who-uses-this">5.2 Who uses this</a></li>
+<li class="nav-sec"><a href="#53-the-competitive-landscape">5.3 The competitive landscape</a></li>
+<li class="nav-sec"><a href="#54-limitations-stated-fairly">5.4 Limitations, stated fairly</a></li>
+<li class="nav-sec"><a href="#55-a-study-plan-that-works">5.5 A study plan that works</a></li>
+<li class="nav-part"><a href="#part-vi--explaining-it-to-others">VI — EXPLAINING IT TO OTHERS</a></li>
+<li class="nav-sec"><a href="#61-the-30-second-version-for-anyone">6.1 The 30-second version, for anyone</a></li>
+<li class="nav-sec"><a href="#62-teaching-a-six-year-old-as-a-script">6.2 Teaching a six-year-old, as a script</a></li>
+<li class="nav-sec"><a href="#63-talking-to-a-specialist">6.3 Talking to a specialist</a></li>
+<li class="nav-sec"><a href="#64-the-2-to-3-minute-version-for-a-curious-colleague">6.4 The 2-to-3-minute version, for a curious colleague</a></li>
 <li class="nav-part"><a href="#appendix-a--glossary">App. A — Glossary</a></li>
 <li class="nav-part"><a href="#appendix-b--pytorch-reference-for-this-book">App. B — PyTorch reference for this book</a></li>
 <li class="nav-part"><a href="#appendix-c--questions-you-might-still-have">App. C — Questions you might still have</a></li>
@@ -440,6 +454,7 @@
 <ul>
 <li><span class="tag tag-src">transcript</span> — stated by Karpathy in the lecture; pulled from the actual captions.</li>
 <li><span class="tag tag-ok">verified</span> — I ran the code and this is the measured result on my machine.</li>
+<li><span class="tag tag-book">little-book</span> — from <em>The Little Book of Reinforcement Learning</em> (Leguet, 2026), with a section number. Used only in Chapter 11.</li>
 <li><span class="tag tag-std">standard</span> — uncontroversial background knowledge.</li>
 <li><span class="tag tag-read">my read</span> — my interpretation or analogy. Argue with it.</li>
 <li><span class="tag tag-unc">uncertain</span> — genuinely unclear or contested.</li>
@@ -476,13 +491,18 @@
 </tr>
 <tr>
 <td><strong>IV</strong></td>
+<td>Fine-tuning and RL: the stages after pretraining</td>
+<td>6–10 h</td>
+</tr>
+<tr>
+<td><strong>V</strong></td>
 <td>What it is good for, and its limits</td>
 <td>40 min</td>
 </tr>
 <tr>
-<td><strong>V</strong></td>
-<td>Two scripts for explaining it to others</td>
-<td>10 min</td>
+<td><strong>VI</strong></td>
+<td>Three scripts for explaining it to others</td>
+<td>15 min</td>
 </tr>
 <tr>
 <td><strong>Appendices</strong></td>
@@ -2629,7 +2649,7 @@ At askill my redeign serv</code></pre>
 <p>And the architecture is the same. That is the point of the lecture, and arguably of the course.</p>
 <h3 id="what-is-deliberately-missing">What is deliberately missing</h3>
 <p>This builds a <strong>decoder-only</strong> transformer: it reads left to right and generates. The original 2017 paper describes an encoder-decoder for translation, where the decoder also attends to the encoder's output through <strong>cross-attention</strong>. GPT has no encoder, so it is omitted.</p>
-<p>It also stops before the stages that turn a language model into ChatGPT: "we did not talk about any of the fine-tuning stages" <span class="tag tag-src">transcript</span>. What this produces is a <strong>pretrained base model</strong>, a document completer. Turning that into an assistant requires supervised fine-tuning on instruction-following examples, then reinforcement learning from human feedback. Those are separate lectures on Karpathy's channel, outside the numbered course.</p>
+<p>It also stops before the stages that turn a language model into ChatGPT: "we did not talk about any of the fine-tuning stages" <span class="tag tag-src">transcript</span>. What this produces is a <strong>pretrained base model</strong>, a document completer. Turning that into an assistant requires supervised fine-tuning on instruction-following examples, then reinforcement learning from human feedback. Those are <strong>Chapters 10 and 11</strong> of this book, which cover the ground of his separate lecture on the subject.</p>
 <h3 id="exercises-6">Exercises</h3>
 <ol type="1">
 <li><strong>Print an attention matrix from a trained model</strong> and look at which characters attend to which. Attention after a space often falls on the previous word's start.</li>
@@ -3136,8 +3156,605 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 </table></div>
 <h3 id="30-second-version-8">30-second version</h3>
 <p>Take the transformer from Chapter 7, scale it to GPT-2's exact shape, and verify it by loading OpenAI's released weights and checking the output matches before training your own. Five hardware-aware changes make training 11× faster, one of which is padding the vocabulary from 50,257 to 50,304 because GPUs prefer round numbers. After 1.7 hours and about $10 of rented GPUs on 10 billion tokens of filtered educational web text, it beats the original GPT-2 while using a tenth of the training data, because clean data substitutes for lots of data.</p>
-<h1 id="part-iv--why-it-matters">PART IV — WHY IT MATTERS</h1>
-<h2 id="41-what-you-can-do-afterward">4.1 What you can do afterward</h2>
+<h1 id="part-iv--beyond-the-course">PART IV — BEYOND THE COURSE</h1>
+<p><em>Karpathy's numbered course stops where Chapter 9 stops: with a pretrained base model. These two chapters cover the stages that turn that base model into ChatGPT, which he treats in a separate lecture rather than in the nine.</em></p>
+<p><strong>What these chapters are grounded in.</strong> Everything before this point came from the nine lectures. These two draw on three sources instead, all cited inline:</p>
+<ul>
+<li><strong>Karpathy's "Deep Dive into LLMs like ChatGPT"</strong> (3h31m), the lecture where he covers fine-tuning and RL. Marked <code><span class="tag tag-src">transcript</span></code> as before; the full captions were retrieved and searched the same way.</li>
+<li><strong><a href="https://github.com/alxndrTL/little-book-rl">The Little Book of Reinforcement Learning</a></strong> by Alexandre Torres Leguet (V1, June 2026), a 154-page introduction that takes RL from the interaction loop through to GRPO and AlphaGo Zero. Claims taken from it are marked <code><span class="tag tag-book">little-book</span></code> with a section number. It is CC BY-SA 4.0, non-commercial; the prose here is mine, and where I follow its framing I say so.</li>
+<li><strong>Code I wrote and ran</strong>, marked <code><span class="tag tag-ok">verified</span></code> exactly as before.</li>
+</ul>
+<p><strong>Why these stages are separated from pretraining at all.</strong> Chapter 9's model has read a large slice of the internet and can continue any document plausibly. What it cannot do is be <em>useful on request</em>. Those are different skills, learned in different ways, and the difference is the subject of Part IV.</p>
+<h2 id="chapter-10--fine-tuning-from-document-completer-to-assistant">Chapter 10 — Fine-tuning: from document completer to assistant</h2>
+<p><strong>Video:</strong> "Deep Dive into LLMs like ChatGPT", 3h31m · <a href="https://youtu.be/7xTGNNLPyMI">youtu.be/7xTGNNLPyMI</a> · <strong>Runs on:</strong> a GPU for the GPT-2 version, any laptop for the character-level version.</p>
+<h3 id="the-problem-9">The problem</h3>
+<p>Ask a base model a question and it does not answer. It continues.</p>
+<p class="lbl lbl-run"><strong>Run it.</strong> This is GPT-2 124M, the exact model from Chapter 9, asked three questions with no fine-tuning:</p>
+<div class="sourceCode codewrap" id="cb142"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> GPT2LMHeadModel, GPT2TokenizerFast</span>
+<span id="cb142-2"><a href="#cb142-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb142-3"><a href="#cb142-3" aria-hidden="true" tabindex="-1"></a>tok <span class="op">=</span> GPT2TokenizerFast.from_pretrained(<span class="st">&#39;gpt2&#39;</span>)<span class="op">;</span> tok.pad_token <span class="op">=</span> tok.eos_token</span>
+<span id="cb142-4"><a href="#cb142-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GPT2LMHeadModel.from_pretrained(<span class="st">&#39;gpt2&#39;</span>).to(<span class="st">&#39;cuda&#39;</span>)</span>
+<span id="cb142-5"><a href="#cb142-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb142-6"><a href="#cb142-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ask(q, n<span class="op">=</span><span class="dv">60</span>):</span>
+<span id="cb142-7"><a href="#cb142-7" aria-hidden="true" tabindex="-1"></a>    ids <span class="op">=</span> tok(q, return_tensors<span class="op">=</span><span class="st">&#39;pt&#39;</span>).to(<span class="st">&#39;cuda&#39;</span>)</span>
+<span id="cb142-8"><a href="#cb142-8" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> model.generate(<span class="op">**</span>ids, max_new_tokens<span class="op">=</span>n, do_sample<span class="op">=</span><span class="va">True</span>, temperature<span class="op">=</span><span class="fl">0.7</span>,</span>
+<span id="cb142-9"><a href="#cb142-9" aria-hidden="true" tabindex="-1"></a>                         top_p<span class="op">=</span><span class="fl">0.9</span>, pad_token_id<span class="op">=</span>tok.eos_token_id)</span>
+<span id="cb142-10"><a href="#cb142-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tok.decode(out[<span class="dv">0</span>][ids[<span class="st">&#39;input_ids&#39;</span>].shape[<span class="dv">1</span>]:], skip_special_tokens<span class="op">=</span><span class="va">True</span>).strip()</span>
+<span id="cb142-11"><a href="#cb142-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb142-12"><a href="#cb142-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ask(<span class="st">&quot;What is the capital of France?&quot;</span>))</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>&quot;France is a large country in terms of population, population density, population
+growth, and population. France is one of the world&#39;s largest economies and has a
+population of 2.8 billion people. France&#39;s economic development is characterized
+by the following three key characteristics:
+
+The most important characteristic&quot;</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p>It never answers. It writes what typically <em>follows</em> a sentence like that on the internet: encyclopedia-ish filler. It also claims France has 2.8 billion people, which is roughly 40 times the real figure.</p>
+<p>The same thing happens to "Explain what a neural network is," which produced <code>'Let's start with a simple example. Let's say we have a neural network that learns how to read the word "lazy" from a text...'</code> <span class="tag tag-ok">verified</span>. It is writing a tutorial <em>around</em> the question rather than answering it.</p>
+<p><strong>This is not a bug.</strong> The model is doing exactly what Chapter 9 trained it to do: predict the next token in a document. Nothing in that objective says a question should be followed by its answer, because on the internet a question is very often followed by more questions, or by a forum signature, or by an advertisement.</p>
+<blockquote class="q-kid">
+<p><strong>Say it to a six-year-old.</strong> Imagine someone who has read every book in the world but has never had a conversation. If you say "what's your name?", they don't answer, they just carry on writing the story you started, because that is the only thing they have ever done. To make them talk to you, you have to show them thousands of examples of what a conversation looks like. That's this chapter.</p>
+</blockquote>
+<h3 id="what-fine-tuning-is">What fine-tuning is</h3>
+<p><strong>Fine-tuning</strong> means continuing to train an already-trained model on a smaller, different dataset. The mechanism is identical to Chapter 9: same loss, same backpropagation, same optimizer. Only the data changes, and the learning rate is much lower so the model adjusts rather than starts over. <span class="tag tag-std">standard</span></p>
+<p><strong>Supervised fine-tuning (SFT)</strong> is fine-tuning on demonstrations of the behaviour you want: pairs of a request and an ideal response.</p>
+<h3 id="step-1--where-the-data-comes-from">Step 1 — where the data comes from</h3>
+<p>Human beings write it. Karpathy is blunt about this: an assistant "is being programmed by example," and the examples come from "human labelers" who "give the ideal assistant response in this situation… a human will write out the ideal response for an assistant in any situation." <span class="tag tag-src">transcript</span></p>
+<p>That sentence is worth pausing on, because it is the least understood fact about these systems. The personality of an assistant, its willingness to answer, its refusals, its formatting habits, its tone: these were not discovered by the model. They were written by people, following a style guide, and then imitated.</p>
+<p>The dataset used here is <strong>Alpaca</strong>, 52,002 instruction-and-response pairs. 31,323 of them have no extra input field, and this chapter uses 4,000 of those. <span class="tag tag-ok">verified</span></p>
+<p class="lbl lbl-run"><strong>Run it.</strong></p>
+<div class="sourceCode codewrap" id="cb144"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb144-2"><a href="#cb144-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> json.load(<span class="bu">open</span>(<span class="st">&#39;alpaca.json&#39;</span>)) <span class="cf">if</span> <span class="kw">not</span> x[<span class="st">&#39;input&#39;</span>].strip()]</span>
+<span id="cb144-3"><a href="#cb144-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;examples:&quot;</span>, <span class="bu">len</span>(data))</span>
+<span id="cb144-4"><a href="#cb144-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;instruction:&quot;</span>, data[<span class="dv">0</span>][<span class="st">&#39;instruction&#39;</span>])</span>
+<span id="cb144-5"><a href="#cb144-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;output:&quot;</span>, data[<span class="dv">0</span>][<span class="st">&#39;output&#39;</span>][:<span class="dv">120</span>])</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>examples: 31323
+instruction: Give three tips for staying healthy.
+output: 1.Eat a balanced diet and make sure to include plenty of fruits and vegetables.
+2. Exercise regularly to keep your body active and strong.</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<h3 id="step-2--the-format-is-the-whole-trick">Step 2 — the format is the whole trick</h3>
+<p>A conversation has structure, and a language model reads a flat stream of tokens. So the structure is imposed by writing it into the text with markers the model learns to recognize:</p>
+<pre class="output"><code>### Instruction:
+Give three tips for staying healthy.
+
+### Response:
+1. Eat a balanced diet...</code></pre>
+<p>That is all a "chat template" is. Real systems use dedicated special tokens added to the vocabulary rather than <code>###</code> strings, so the markers can never be confused with user text, but the idea does not change. When you use a chat API, your message is being wrapped in something like this before it reaches the model, and the model's job is still, exactly as in Chapter 7, predicting the next token.</p>
+<p><strong>This connects straight back to Chapter 8.</strong> The template is tokens. If a user's text happens to contain the marker, they can impersonate the boundary between turns, which is the mechanical basis of a whole family of prompt-injection attacks. <span class="tag tag-read">my read</span></p>
+<h3 id="step-3--train-on-the-response-only">Step 3 — train on the response only</h3>
+<p>One detail separates working SFT from a model that learns to invent its own questions: <strong>the loss is computed only on the response tokens.</strong> The prompt is context, not a target.</p>
+<p class="lbl lbl-run"><strong>Run it.</strong></p>
+<div class="sourceCode codewrap" id="cb147"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> encode(ex):</span>
+<span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> chat(ex[<span class="st">&#39;instruction&#39;</span>]) <span class="op">+</span> ex[<span class="st">&#39;output&#39;</span>] <span class="op">+</span> tok.eos_token</span>
+<span id="cb147-3"><a href="#cb147-3" aria-hidden="true" tabindex="-1"></a>    ids <span class="op">=</span> tok(text, truncation<span class="op">=</span><span class="va">True</span>, max_length<span class="op">=</span><span class="dv">256</span>)[<span class="st">&#39;input_ids&#39;</span>]</span>
+<span id="cb147-4"><a href="#cb147-4" aria-hidden="true" tabindex="-1"></a>    prompt_len <span class="op">=</span> <span class="bu">len</span>(tok(chat(ex[<span class="st">&#39;instruction&#39;</span>]))[<span class="st">&#39;input_ids&#39;</span>])</span>
+<span id="cb147-5"><a href="#cb147-5" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> <span class="bu">list</span>(ids)</span>
+<span id="cb147-6"><a href="#cb147-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">min</span>(prompt_len, <span class="bu">len</span>(labels))):</span>
+<span id="cb147-7"><a href="#cb147-7" aria-hidden="true" tabindex="-1"></a>        labels[i] <span class="op">=</span> <span class="op">-</span><span class="dv">100</span>          <span class="co"># -100 means &quot;ignore me in the loss&quot;</span></span>
+<span id="cb147-8"><a href="#cb147-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ids, labels</span></code></pre></div>
+<p><code>-100</code> is PyTorch's convention for "no target here," and <code>F.cross_entropy</code> skips those positions. Without this masking the model spends much of its capacity learning to generate plausible <em>instructions</em>, which is not the job. <span class="tag tag-std">standard</span></p>
+<p>The end-of-sequence token matters too. Appending <code>tok.eos_token</code> is what teaches the model to <em>stop</em>. Leave it out and your assistant answers the question and then keeps going forever.</p>
+<h3 id="step-4--train-it">Step 4 — train it</h3>
+<p class="lbl lbl-run"><strong>Run it.</strong></p>
+<div class="sourceCode codewrap" id="cb148"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a>STEPS <span class="op">=</span> <span class="dv">600</span></span>
+<span id="cb148-2"><a href="#cb148-2" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> torch.optim.AdamW(model.parameters(), lr<span class="op">=</span><span class="fl">2e-5</span>, weight_decay<span class="op">=</span><span class="fl">0.01</span>)</span>
+<span id="cb148-3"><a href="#cb148-3" aria-hidden="true" tabindex="-1"></a>sched <span class="op">=</span> torch.optim.lr_scheduler.OneCycleLR(opt, max_lr<span class="op">=</span><span class="fl">2e-5</span>, total_steps<span class="op">=</span>STEPS, pct_start<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb148-4"><a href="#cb148-4" aria-hidden="true" tabindex="-1"></a>model.train()</span>
+<span id="cb148-5"><a href="#cb148-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(STEPS):</span>
+<span id="cb148-6"><a href="#cb148-6" aria-hidden="true" tabindex="-1"></a>    x, y <span class="op">=</span> batch()                      <span class="co"># 8 examples, padded, labels masked</span></span>
+<span id="cb148-7"><a href="#cb148-7" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> model(input_ids<span class="op">=</span>x, labels<span class="op">=</span>y).loss</span>
+<span id="cb148-8"><a href="#cb148-8" aria-hidden="true" tabindex="-1"></a>    opt.zero_grad(set_to_none<span class="op">=</span><span class="va">True</span>)<span class="op">;</span> loss.backward()</span>
+<span id="cb148-9"><a href="#cb148-9" aria-hidden="true" tabindex="-1"></a>    torch.nn.utils.clip_grad_norm_(model.parameters(), <span class="fl">1.0</span>)</span>
+<span id="cb148-10"><a href="#cb148-10" aria-hidden="true" tabindex="-1"></a>    opt.step()<span class="op">;</span> sched.step()</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>  sft    0  loss 2.6412  [1s]
+  sft  100  loss 2.1220  [21s]
+  sft  300  loss 1.9542  [61s]
+  sft  599  loss 2.2733  [121s]</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p>Two minutes on one GPU. Note the learning rate: <strong>2e-5</strong>, roughly 30× smaller than the 6e-4 of Chapter 9's pretraining. Fine-tuning nudges a model; pretraining builds one. Note also that the loss is noisy and barely moves. Unlike pretraining, where the loss curve is the whole story, SFT loss is a poor guide to whether the result is any good. What matters is behaviour, which you have to look at.</p>
+<h3 id="step-5--look-at-what-changed">Step 5 — look at what changed</h3>
+<p class="lbl lbl-out"><strong>What you should see</strong>, same three questions, now in the chat template:</p>
+<pre class="output"><code>Q: What is the capital of France?
+A: &#39;The capital of France is Paris, located in the eastern part of the city.&#39;
+
+Q: Give three tips for staying healthy.
+A: &#39;1. Exercise regularly.
+    2. Wear appropriate clothing.
+    3. Avoid caffeine and other stimulants.
+    4. Eat a balanced diet.
+    5. Exercise regularly and don&#39;t overdo it.
+    6. Avoid excessive amounts of alcohol and caffeine.
+    7. Avoid consuming processed foods&#39;
+
+Q: Explain what a neural network is.
+A: &#39;A neural network is a type of artificial neural network that is used to process
+    and interpret large amounts of data. It is used to process and process large
+    amounts of data in a way that is computationally efficient.&#39;</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p><strong>Read those three answers carefully, because together they are the entire lesson of this chapter.</strong></p>
+<p><strong>The format is transformed.</strong> It answers immediately. It answers the question that was asked. It produces a numbered list when asked for tips. It stops. Two minutes of training on 4,000 examples did that.</p>
+<p><strong>The knowledge is unchanged.</strong> "Paris, located in the eastern part of the city" is not an answer that improved on the base model's understanding of France; it is confident nonsense in a helpful shape. The neural network definition is circular: a neural network is a type of artificial neural network. Asked for <em>three</em> tips it produced <em>seven</em>.</p>
+<p>So: <strong>SFT teaches format, tone, and the habit of answering. It does not teach knowledge, accuracy, or careful instruction-following.</strong> Everything it knows, it knew after Chapter 9. What changed is its willingness to present that knowledge on request, including the parts it does not have.</p>
+<h3 id="step-6--the-same-thing-on-a-laptop">Step 6 — the same thing on a laptop</h3>
+<p>If you have no GPU, the identical mechanism runs at character scale in seconds, using the names model. The target behaviour: produce a name starting with <code>k</code> and ending with <code>a</code>.</p>
+<p class="lbl lbl-run"><strong>Run it.</strong></p>
+<div class="sourceCode codewrap" id="cb151"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> satisfies(w):</span>
+<span id="cb151-2"><a href="#cb151-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(w) <span class="op">&gt;=</span> <span class="dv">3</span> <span class="kw">and</span> w[<span class="dv">0</span>] <span class="op">==</span> <span class="st">&#39;k&#39;</span> <span class="kw">and</span> w[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;a&#39;</span></span>
+<span id="cb151-3"><a href="#cb151-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb151-4"><a href="#cb151-4" aria-hidden="true" tabindex="-1"></a>demos <span class="op">=</span> [w <span class="cf">for</span> w <span class="kw">in</span> words <span class="cf">if</span> satisfies(w)]</span>
+<span id="cb151-5"><a href="#cb151-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="bu">len</span>(demos)<span class="sc">}</span><span class="ss"> demonstrations available (</span><span class="sc">{</span><span class="bu">len</span>(demos)<span class="op">/</span><span class="bu">len</span>(words)<span class="op">*</span><span class="dv">100</span><span class="sc">:.2f}</span><span class="ss">% of the corpus)&quot;</span>)</span>
+<span id="cb151-6"><a href="#cb151-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb151-7"><a href="#cb151-7" aria-hidden="true" tabindex="-1"></a>sft <span class="op">=</span> copy.deepcopy(base_model)                 <span class="co"># a 0.8M-parameter char GPT</span></span>
+<span id="cb151-8"><a href="#cb151-8" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> torch.optim.AdamW(sft.parameters(), lr<span class="op">=</span><span class="fl">1e-4</span>)</span>
+<span id="cb151-9"><a href="#cb151-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">400</span>):</span>
+<span id="cb151-10"><a href="#cb151-10" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> pack(demos)[torch.randint(<span class="dv">0</span>, <span class="bu">len</span>(demos), (<span class="dv">64</span>,))].to(device)</span>
+<span id="cb151-11"><a href="#cb151-11" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> F.cross_entropy(sft(b[:, :<span class="op">-</span><span class="dv">1</span>]).reshape(<span class="op">-</span><span class="dv">1</span>, V), b[:, <span class="dv">1</span>:].reshape(<span class="op">-</span><span class="dv">1</span>))</span>
+<span id="cb151-12"><a href="#cb151-12" aria-hidden="true" tabindex="-1"></a>    opt.zero_grad(set_to_none<span class="op">=</span><span class="va">True</span>)<span class="op">;</span> loss.backward()<span class="op">;</span> opt.step()</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>493 demonstrations available (1.54% of the corpus)
+BASE      satisfies the target  1.37%   e.g. [&#39;lioni&#39;, &#39;hawre&#39;, &#39;maushawn&#39;, &#39;jayonna&#39;]
+  sft    0  loss 0.7904  target rate   2.0%
+  sft  100  loss 0.4505  target rate  90.6%
+  sft  399  loss 0.4189  target rate  98.8%
+AFTER SFT satisfies the target 96.48%   e.g. [&#39;kemfa&#39;, &#39;klephika&#39;, &#39;kaliowa&#39;, &#39;kenna&#39;]
+distinct names in 512 samples after SFT: 378</code></pre>
+<p><span class="tag tag-ok">verified</span> <em class="tagnote">2 seconds on one GPU, about a minute on a CPU</em></p>
+<p>From 1.37% to 96.48%. The model learned the behaviour by imitation.</p>
+<h3 id="step-7--the-catch-which-motivates-the-whole-next-chapter">Step 7 — the catch, which motivates the whole next chapter</h3>
+<p>SFT needs demonstrations. What happens when you have very few?</p>
+<p class="lbl lbl-run"><strong>Run it.</strong> The same code with only the first 20 demonstrations instead of all 493:</p>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>SFT on 20 demonstrations (0.06% of the corpus)
+AFTER SFT satisfies the target 98.24%   e.g. [&#39;kenna&#39;, &#39;karina&#39;, &#39;kaiya&#39;, &#39;kenna&#39;,
+                                              &#39;katalina&#39;, &#39;kayla&#39;, &#39;kenna&#39;, &#39;kiera&#39;]
+distinct names in 512 samples after SFT: 53</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p><strong>Look at the last line, not the first.</strong> The target rate went <em>up</em>, to 98.24%. And the model now produces only <strong>53 distinct names in 512 samples</strong>, against 378 with the full set and 509 for the base model. <code>kenna</code> appears three times in eight samples.</p>
+<p>It did not learn the <em>rule</em>. It memorized the twenty examples and now recites them. This is <strong>mode collapse</strong>, and it is the characteristic failure of imitation learning on scarce data: you get the demonstrated behaviour and lose everything else.</p>
+<p>Two consequences follow, and both are why Chapter 11 exists:</p>
+<ol type="1">
+<li><strong>SFT is bounded by its demonstrations.</strong> It can reproduce what a labeller would write, and cannot exceed it. If no human demonstrated a solution, the model cannot imitate one.</li>
+<li><strong>Demonstrations are expensive.</strong> Every capability needs people writing examples of it, and for hard problems the people have to be experts.</li>
+</ol>
+<blockquote class="q-phd">
+<p><strong>For the PhD in the room.</strong> SFT is behaviour cloning, with the distribution-shift problem that entails: training conditions on ground-truth prefixes, generation conditions on the model's own prefixes, so errors compound along a trajectory in the way DAgger was designed to address. The KL-to-base is unconstrained, so capability regression on unrelated tasks ("alignment tax") shows up here. The mode collapse above is the forward-KL objective doing what it does when the target distribution has narrow support: mass-covering on a near-degenerate empirical distribution. And note the token-budget asymmetry that makes this cheap: 4,000 examples at ~83 median tokens is roughly 330k tokens, about 0.003% of GPT-2's pretraining budget, which is why two minutes of SFT can visibly rewrite behaviour while leaving knowledge untouched.</p>
+</blockquote>
+<h3 id="hallucination-and-why-sft-makes-it-look-worse">Hallucination, and why SFT makes it look worse</h3>
+<p>Karpathy spends a substantial part of the lecture on hallucination, and the connection to this chapter is direct. <span class="tag tag-src">transcript</span></p>
+<p>The base model produced "2.8 billion people" without any pretence of authority; it was obviously rambling. The fine-tuned model produced "Paris, located in the eastern part of the city" in the calm, structured voice of an assistant. <strong>The error rate did not necessarily change. The presentation did.</strong> SFT trained the model to sound like something that knows the answer, on every question, including questions it cannot answer.</p>
+<p>The mitigations he describes:</p>
+<ul>
+<li><strong>Teach the model to say "I don't know."</strong> This requires demonstrations of refusal, which means probing the model to find what it does not know and writing examples where the ideal response is an admission of ignorance. Ignorance has to be trained in like any other behaviour.</li>
+<li><strong>Give it tools.</strong> Let it search rather than recall. A retrieved fact in the context window is being <em>read</em>, not remembered, which is a far more reliable operation.</li>
+</ul>
+<p><strong>The Swiss cheese model.</strong> Karpathy's summary image for LLM capability: the models are "incredibly good across so many different disciplines but then fail randomly almost in some unique cases" <span class="tag tag-src">transcript</span>. His example is asking which is bigger, 9.11 or 9.9. The holes are not where you would expect from a human, and that mismatch, rather than the raw error rate, is what makes these systems hard to use well.</p>
+<p>Note where that particular hole comes from: <strong>Chapter 8</strong>. Numbers are chopped into tokens that ignore place value, so <code>9.11</code> and <code>9.9</code> arrive as fragments whose comparison is not a numeric operation at all.</p>
+<h3 id="exercises-9">Exercises</h3>
+<ol type="1">
+<li><strong>Remove the loss masking</strong> (drop the <code>-100</code> labels) and retrain. The model will start generating its own instructions as well as responses. Confirm it.</li>
+<li><strong>Drop the EOS token</strong> from the training text and watch the model fail to stop.</li>
+<li><strong>Change the template</strong> from <code>### Instruction:</code> to something else at generation time, and observe how much of the assistant behaviour disappears. The behaviour is bound to the format.</li>
+<li><strong>Run the 20-demonstration collapse yourself</strong>, then try 50, 100, and 200 demonstrations, and plot distinct-name count against demonstration count.</li>
+<li><strong>Probe for knowledge that SFT did not add.</strong> Ask the fine-tuned model ten factual questions and score them. Compare against the base model prompted in a few-shot format. The gap should be small, which is the chapter's claim.</li>
+</ol>
+<h3 id="troubleshooting-8">Troubleshooting</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model generates its own questions</td>
+<td>Loss not masked to the response</td>
+</tr>
+<tr>
+<td>Model never stops generating</td>
+<td>No EOS token in training examples</td>
+</tr>
+<tr>
+<td>Answers ignore the question</td>
+<td>Template at generation time differs from training</td>
+</tr>
+<tr>
+<td>Output is worse than the base model</td>
+<td>Learning rate too high; 2e-5 is a reasonable start, 1e-4 will damage it</td>
+</tr>
+<tr>
+<td>Batched generation is garbled</td>
+<td>Decoder-only models need <code>tokenizer.padding_side = 'left'</code> <span class="tag tag-ok">verified</span> <em class="tagnote">this cost me a wrong measurement</em></td>
+</tr>
+<tr>
+<td>Loss barely moves</td>
+<td>Expected. SFT loss is a poor proxy for quality; evaluate behaviour instead</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="30-second-version-9">30-second version</h3>
+<p>A pretrained model continues documents; it does not answer questions. Fine-tuning on a few thousand human-written request-and-response pairs, with the loss computed only on the responses, turns it into something that answers. Two minutes and 4,000 examples were enough to change GPT-2's behaviour completely. What it did not change is what the model knows: it answered "the capital of France is Paris, located in the eastern part of the city," which is the right shape and the wrong content. Fine-tuning teaches format and tone, not knowledge, and it is bounded by the demonstrations you can afford to write.</p>
+<h2 id="chapter-11--reinforcement-learning-practice-instead-of-imitation">Chapter 11 — Reinforcement learning: practice instead of imitation</h2>
+<p><strong>Sources:</strong> Karpathy's "Deep Dive into LLMs like ChatGPT" <code><span class="tag tag-src">transcript</span></code> and <em>The Little Book of Reinforcement Learning</em> <code><span class="tag tag-book">little-book</span></code>. <strong>Runs on:</strong> the GRPO experiment takes 30 seconds on a GPU and a few minutes on a CPU.</p>
+<h3 id="the-problem-10">The problem</h3>
+<p>Chapter 10 ended on two walls. SFT can only reproduce behaviour someone demonstrated, and demonstrations cost human time. For a maths problem nobody has solved, or a coding style nobody has written down, there is nothing to imitate.</p>
+<p>Reinforcement learning removes the demonstration requirement. You supply a way of <em>scoring</em> an attempt, and the model searches for behaviour that scores well. The little book puts the trade precisely: SFT "requires demonstrations. RL on the other hand needs no demonstrations, only a reward function that scores model outputs and lets the model search for behaviour that scores well" <code><span class="tag tag-book">little-book · ch5</span></code>.</p>
+<p>That difference has a consequence worth stating plainly: because the signal comes from a score rather than a fixed human-written target, <strong>RL can in principle exceed any individual human demonstrator</strong> <code><span class="tag tag-book">little-book · ch5</span></code>.</p>
+<blockquote class="q-kid">
+<p><strong>Say it to a six-year-old.</strong> There are two ways to get good at something. One is copying: you watch someone tie their shoes and you do what they did. That only works if someone shows you, and you can never get better at it than them. The other way is practising: you try, you see if it worked, and if it did you do more of that. Nobody has to show you. You can end up better than anyone who could have taught you. Computers learn both ways, and this chapter is the practising one.</p>
+</blockquote>
+<h3 id="111-reinforcement-learning-from-zero">11.1 Reinforcement learning from zero</h3>
+<p>Everything so far in this book has been <strong>supervised learning</strong>: for each input there is a correct answer, and the loss measures the distance to it. RL has no correct answers, only outcomes that turn out better or worse.</p>
+<p>The pieces, each defined before it is used <code><span class="tag tag-book">little-book · ch1</span></code>:</p>
+<ul>
+<li><strong>Agent</strong> — the thing making decisions. Here, the language model.</li>
+<li><strong>Environment</strong> — everything the agent interacts with, which responds to what the agent does.</li>
+<li><strong>State</strong> (written <em>S</em>) — the situation the agent is currently in.</li>
+<li><strong>Action</strong> (written <em>A</em>) — what the agent does next, chosen from the actions available.</li>
+<li><strong>Reward</strong> (written <em>R</em>) — a number scoring what happened. Higher is better. This is the <em>only</em> feedback.</li>
+<li><strong>Policy</strong> (written <em>π</em>, "pi") — the agent's strategy: a rule mapping a state to a probability distribution over actions. Training means improving π.</li>
+<li><strong>Trajectory</strong> or <strong>rollout</strong> — one complete run from start to finish: state, action, state, action, and eventually a reward.</li>
+<li><strong>Return</strong> — the total reward collected over a trajectory. The thing being maximized.</li>
+</ul>
+<p><strong>The interaction loop</strong>: the agent observes a state, picks an action, the environment moves to a new state and possibly hands back a reward, and this repeats until the episode ends.</p>
+<p><strong>Analogy.</strong> Learning to cook without a recipe. The kitchen is the environment, what is currently in the pan is the state, adding salt is an action, and the reward comes at the end when someone tastes it. You do not get told "you should have added the salt 40 seconds earlier." You get one number at the end, and you have to work out which of your fifty decisions deserves the credit.</p>
+<p>That last sentence is the central difficulty of RL, and it has a name: the <strong>credit assignment problem</strong>. A sparse reward at the end of a long trajectory has to be attributed to the individual actions that earned it.</p>
+<h3 id="112-a-language-model-as-an-rl-problem">11.2 A language model as an RL problem</h3>
+<p>The translation is exact, and once you see it the rest of the chapter follows <code><span class="tag tag-book">little-book · §5.1</span></code>:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>RL concept</th>
+<th>In an LLM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Policy</strong> π<sub>θ</sub></td>
+<td>The language model itself. It already outputs a probability distribution over next tokens, which <em>is</em> a policy</td>
+</tr>
+<tr>
+<td><strong>State</strong> S<sub>t</sub></td>
+<td>The prompt plus every token generated so far</td>
+</tr>
+<tr>
+<td><strong>Action</strong> A<sub>t</sub></td>
+<td>The next token, chosen from the vocabulary</td>
+</tr>
+<tr>
+<td><strong>Transition</strong></td>
+<td>Deterministic: append the token to the state. Nothing random happens</td>
+</tr>
+<tr>
+<td><strong>Reward</strong></td>
+<td>Sparse and terminal: a verifier scores the finished response and returns one number</td>
+</tr>
+<tr>
+<td><strong>Episode</strong></td>
+<td>One complete response, ending at the end-of-sequence token or a length cap</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The policy was already there.</strong> This is the part worth appreciating. You do not have to build anything new to do RL on a language model: a softmax over the vocabulary is a policy over actions, so the model you trained in Chapter 9 is already an RL agent that has never been given a reward.</p>
+<p>Two features make this an unusually convenient RL problem. Transitions are deterministic, so all the randomness is in the policy's own sampling. And the environment is trivial: appending a token cannot fail.</p>
+<p>One feature makes it unusually hard. The action space is the whole vocabulary, around 50,000 to 100,000 actions at every single step, and a reward arrives only after hundreds of them.</p>
+<h3 id="113-two-generations-of-rl-on-language-models">11.3 Two generations of RL on language models</h3>
+<p>The field has done this twice, for different reasons <code><span class="tag tag-book">little-book · ch5</span></code>.</p>
+<p><strong>First generation: alignment (RLHF), around 2022.</strong> Turn a base model into an assistant. Train a <strong>reward model</strong> to predict which of two responses a human would prefer, then use RL to push the policy toward responses that reward model scores highly. This is <strong>RLHF</strong>, Reinforcement Learning from Human Feedback, and it is what made ChatGPT feel like ChatGPT.</p>
+<p>Its limit is the signal. Predicting human preference is "quite a shallow signal determined mostly by tone and style," and it "gives the model no incentive to reason, plan, or develop any new capability" <code><span class="tag tag-book">little-book · ch5</span></code>. You get something pleasant to talk to, not something that can think.</p>
+<p><strong>Second generation: reasoning (RLVR), from 2024.</strong> Use rewards that can be checked mechanically: does the maths answer match, do the tests pass. This is <strong>RLVR</strong>, Reinforcement Learning with Verifiable Rewards. Karpathy's framing is that thinking "emerges in the process of the optimization when we basically run RL on many math and code problems that have verifiable solutions" <code><span class="tag tag-src">transcript</span></code>.</p>
+<p>The word <em>emerges</em> is doing real work there. Nobody demonstrated step-by-step reasoning and nobody rewarded it directly. The reward is only on the final answer. Reasoning appears because it is instrumentally useful for getting the final answer right.</p>
+<p>Two properties make RLVR practical at scale where RLHF was not: the reward is harder to game, and it is more "interesting" to optimize against, in that pushing on it tends to develop real capability. As a result RLVR is run at a non-trivial fraction of pretraining compute, above 10% <code><span class="tag tag-book">little-book · ch5</span></code>.</p>
+<p><strong>The dividing line is verifiability</strong>, and it runs through the rest of this chapter:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Verifiable</th>
+<th>Unverifiable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Examples</td>
+<td>maths, code, formal logic</td>
+<td>creative writing, advice, tone</td>
+</tr>
+<tr>
+<td>Reward source</td>
+<td>a function you can write</td>
+<td>a model trained on human comparisons</td>
+</tr>
+<tr>
+<td>Can it be gamed?</td>
+<td>Hard</td>
+<td>Easily</td>
+</tr>
+<tr>
+<td>Method</td>
+<td>GRPO and relatives</td>
+<td>RLHF, DPO</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="114-how-a-policy-improves-the-idea-behind-every-method-here">11.4 How a policy improves: the idea behind every method here</h3>
+<p>The whole family of methods rests on one sentence: <strong>make the actions that led to good outcomes more likely, and the ones that led to bad outcomes less likely.</strong></p>
+<p>Four refinements turn that sentence into GRPO, and each fixes a specific problem with the one before <code><span class="tag tag-book">little-book · ch4</span></code>.</p>
+<p><strong>1. The basic policy gradient (REINFORCE).</strong> Sample a trajectory, get its return, and adjust the parameters to increase the log-probability of every action taken, scaled by that return. Good rollout, all its tokens become more likely.</p>
+<p>The problem: <strong>variance</strong>. If every rollout scores between 8 and 10, every action gets pushed up, just by different amounts. The learning signal is buried in a large constant.</p>
+<p><strong>2. Subtract a baseline.</strong> Instead of scaling by the raw return, scale by the return <em>minus a reference value</em>. Now a rollout scoring 8 when the average is 9 gets pushed <strong>down</strong>, which is the correct instruction. This quantity, "how much better than expected," is the <strong>advantage</strong>.</p>
+<p>Subtracting a baseline does not bias the result, provided the baseline does not depend on the action taken. It only reduces variance. That is the single most important trick in policy-gradient methods.</p>
+<p><strong>3. Do not step too far (PPO).</strong> Policy-gradient estimates are only valid near the policy that produced the data. Take a large step and your data no longer describes the policy you now have. <strong>PPO</strong> (Proximal Policy Optimization) handles this by clipping: it computes the ratio between the new policy's probability for an action and the old one's, and refuses to let a single update move that ratio outside roughly 0.8 to 1.2. If an update wants to make a token twenty times more likely, it gets 1.2 times more likely, and that is the end of it.</p>
+<p><strong>4. Drop the critic (GRPO).</strong> PPO estimates the advantage with a learned <strong>value function</strong>, a second network that predicts expected return from a state. For LLMs that critic is "typically as large as the policy," expensive in memory, and hard to train because the reward is sparse and arrives only at the end of long trajectories <code><span class="tag tag-book">little-book · §5.2</span></code>.</p>
+<p><strong>GRPO</strong> (Group Relative Policy Optimization) removes it with an idea that is obvious in hindsight: to know whether a response is better than average, generate several responses to the same prompt and compare them to each other. The baseline is the group's mean reward. No second network.</p>
+<p>For a group of G responses with rewards R₁…R<sub>G</sub>, the advantage of response <em>i</em> is:</p>
+<pre class="output"><code>advantage_i = R_i − mean(R)</code></pre>
+<p>optionally divided by the group's standard deviation. That is the whole of it <code><span class="tag tag-book">little-book · §5.2</span></code>.</p>
+<p><strong>One more component: the leash.</strong> Left alone, a policy chasing a reward will drift into degenerate text that scores well and reads like nothing. So the objective includes a <strong>KL penalty</strong> against a frozen <strong>reference policy</strong>, usually the SFT model you started from. KL divergence measures how far one distribution has moved from another; penalizing it keeps the policy recognizably close to where it started. This "prevents collapse to degenerate token distributions that exploit the reward without producing readable text" <code><span class="tag tag-book">little-book · §5.1</span></code>. You will watch that happen in section 11.6.</p>
+<p><strong>GRPO also generalizes beyond language.</strong> It applies to any environment where only terminal rewards are available and you can start multiple rollouts from the same state <code><span class="tag tag-book">little-book · §5.2</span></code>.</p>
+<h3 id="115-grpo-implemented-and-run">11.5 GRPO, implemented and run</h3>
+<p>Small enough to read, real enough to work. The task: make the names model from Chapter 2's dataset produce names starting with <code>k</code> and ending with <code>a</code>. The verifier is four lines of Python, and <strong>there are no demonstrations anywhere in this process</strong>.</p>
+<p class="lbl lbl-run"><strong>Run it.</strong></p>
+<div class="sourceCode codewrap" id="cb155"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reward(name: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb155-2"><a href="#cb155-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;A programmatic grader. No reward model, no human labels, no gradients.</span></span>
+<span id="cb155-3"><a href="#cb155-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Stands in for &#39;check the maths answer&#39; in a real RLVR setup.&quot;&quot;&quot;</span></span>
+<span id="cb155-4"><a href="#cb155-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(name) <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb155-5"><a href="#cb155-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fl">0.0</span></span>
+<span id="cb155-6"><a href="#cb155-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fl">1.0</span> <span class="op">*</span> (name[<span class="dv">0</span>] <span class="op">==</span> <span class="st">&#39;k&#39;</span> <span class="kw">and</span> name[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;a&#39;</span>)</span>
+<span id="cb155-7"><a href="#cb155-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-8"><a href="#cb155-8" aria-hidden="true" tabindex="-1"></a>ref <span class="op">=</span> copy.deepcopy(model).<span class="bu">eval</span>()          <span class="co"># frozen reference for the KL leash</span></span>
+<span id="cb155-9"><a href="#cb155-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> p <span class="kw">in</span> ref.parameters():</span>
+<span id="cb155-10"><a href="#cb155-10" aria-hidden="true" tabindex="-1"></a>    p.requires_grad <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb155-11"><a href="#cb155-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-12"><a href="#cb155-12" aria-hidden="true" tabindex="-1"></a>G, EPS, BETA, LR <span class="op">=</span> <span class="dv">64</span>, <span class="fl">0.2</span>, <span class="fl">0.02</span>, <span class="fl">1e-5</span></span>
+<span id="cb155-13"><a href="#cb155-13" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> torch.optim.AdamW(model.parameters(), lr<span class="op">=</span>LR)</span>
+<span id="cb155-14"><a href="#cb155-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-15"><a href="#cb155-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> logprobs_of(m, idx):</span>
+<span id="cb155-16"><a href="#cb155-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;log pi(token_t | everything before t), for each generated token.&quot;&quot;&quot;</span></span>
+<span id="cb155-17"><a href="#cb155-17" aria-hidden="true" tabindex="-1"></a>    lp <span class="op">=</span> F.log_softmax(m(idx[:, :<span class="op">-</span><span class="dv">1</span>]), <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb155-18"><a href="#cb155-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> lp.gather(<span class="op">-</span><span class="dv">1</span>, idx[:, <span class="dv">1</span>:].unsqueeze(<span class="op">-</span><span class="dv">1</span>)).squeeze(<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb155-19"><a href="#cb155-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-20"><a href="#cb155-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">600</span>):</span>
+<span id="cb155-21"><a href="#cb155-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. roll out G responses from the same starting state</span></span>
+<span id="cb155-22"><a href="#cb155-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb155-23"><a href="#cb155-23" aria-hidden="true" tabindex="-1"></a>        idx, texts <span class="op">=</span> model.sample(G)</span>
+<span id="cb155-24"><a href="#cb155-24" aria-hidden="true" tabindex="-1"></a>        old_lp <span class="op">=</span> logprobs_of(model, idx)</span>
+<span id="cb155-25"><a href="#cb155-25" aria-hidden="true" tabindex="-1"></a>    R <span class="op">=</span> torch.tensor([reward(t) <span class="cf">for</span> t <span class="kw">in</span> texts], device<span class="op">=</span>device)</span>
+<span id="cb155-26"><a href="#cb155-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-27"><a href="#cb155-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. group-relative advantage: the baseline is the group&#39;s own mean</span></span>
+<span id="cb155-28"><a href="#cb155-28" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> R <span class="op">-</span> R.mean()</span>
+<span id="cb155-29"><a href="#cb155-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> R.std() <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb155-30"><a href="#cb155-30" aria-hidden="true" tabindex="-1"></a>        A <span class="op">=</span> A <span class="op">/</span> (R.std() <span class="op">+</span> <span class="fl">1e-8</span>)</span>
+<span id="cb155-31"><a href="#cb155-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-32"><a href="#cb155-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. clipped update, plus a KL leash to the frozen reference</span></span>
+<span id="cb155-33"><a href="#cb155-33" aria-hidden="true" tabindex="-1"></a>    new_lp <span class="op">=</span> logprobs_of(model, idx)</span>
+<span id="cb155-34"><a href="#cb155-34" aria-hidden="true" tabindex="-1"></a>    ratio <span class="op">=</span> (new_lp <span class="op">-</span> old_lp).exp()</span>
+<span id="cb155-35"><a href="#cb155-35" aria-hidden="true" tabindex="-1"></a>    pg <span class="op">=</span> <span class="op">-</span>torch.<span class="bu">min</span>(ratio <span class="op">*</span> A.unsqueeze(<span class="dv">1</span>),</span>
+<span id="cb155-36"><a href="#cb155-36" aria-hidden="true" tabindex="-1"></a>                    ratio.clamp(<span class="dv">1</span> <span class="op">-</span> EPS, <span class="dv">1</span> <span class="op">+</span> EPS) <span class="op">*</span> A.unsqueeze(<span class="dv">1</span>))</span>
+<span id="cb155-37"><a href="#cb155-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb155-38"><a href="#cb155-38" aria-hidden="true" tabindex="-1"></a>        ref_lp <span class="op">=</span> logprobs_of(ref, idx)</span>
+<span id="cb155-39"><a href="#cb155-39" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> ((pg <span class="op">+</span> BETA <span class="op">*</span> (new_lp <span class="op">-</span> ref_lp)) <span class="op">*</span> live).<span class="bu">sum</span>() <span class="op">/</span> live.<span class="bu">sum</span>()</span>
+<span id="cb155-40"><a href="#cb155-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-41"><a href="#cb155-41" aria-hidden="true" tabindex="-1"></a>    opt.zero_grad(set_to_none<span class="op">=</span><span class="va">True</span>)<span class="op">;</span> loss.backward()</span>
+<span id="cb155-42"><a href="#cb155-42" aria-hidden="true" tabindex="-1"></a>    torch.nn.utils.clip_grad_norm_(model.parameters(), <span class="fl">1.0</span>)</span>
+<span id="cb155-43"><a href="#cb155-43" aria-hidden="true" tabindex="-1"></a>    opt.step()</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>base model samples: [&#39;lioni&#39;, &#39;hawre&#39;, &#39;maushawn&#39;, &#39;jayonna&#39;, &#39;makai&#39;, &#39;abarami&#39;]
+base model satisfies the verifier 0.6% of the time
+  grpo    0  reward 0.000  avg25 0.000  kl +0.0000  [0s]
+  grpo  100  reward 0.141  avg25 0.059  kl +0.0205  [3s]
+  grpo  200  reward 0.406  avg25 0.309  kl +0.1125  [4s]
+  grpo  300  reward 0.812  avg25 0.701  kl +0.2518  [6s]
+  grpo  400  reward 0.891  avg25 0.900  kl +0.3310  [8s]
+  grpo  599  reward 0.969  avg25 0.976  kl +0.5259  [11s]
+
+before GRPO: 0.6%   after GRPO: 96.1%</code></pre>
+<p><span class="tag tag-ok">verified</span> <em class="tagnote">11 seconds on one GPU</em></p>
+<p><strong>From 0.6% to 96.1%, from a four-line scoring function and no examples of the target behaviour whatsoever.</strong></p>
+<p>Trace what happened in the first hundred steps, because it is the mechanism in miniature. At step 0 all 64 rollouts scored zero, so the advantage was zero for every one of them and nothing was learned. There was no gradient because there was no <em>difference</em>. Then a rollout happened to start with <code>k</code> and end with <code>a</code>, scoring 1 against a group mean near 0.02, giving it a large positive advantage, and every token in it became more likely. That is the entire algorithm: <strong>rare accidental successes get amplified until they stop being accidental.</strong></p>
+<p>This is also why the reward must be achievable by chance at the start. A verifier the base model satisfies 0% of the time produces zero gradient forever. In real RLVR pipelines this is exactly why prompts are filtered so that some rollouts succeed and some fail; batches where every rollout scores identically carry no signal <code><span class="tag tag-book">little-book · §5.3</span></code>.</p>
+<h3 id="116-reward-hacking-watched-live">11.6 Reward hacking, watched live</h3>
+<p>Run the same experiment and look at what it produces at the end:</p>
+<pre class="output"><code>samples after GRPO: [&#39;kaiaeaaa&#39;, &#39;kaina&#39;, &#39;keauana&#39;, &#39;kariaa&#39;, &#39;kayaaa&#39;,
+                     &#39;nalaha&#39;, &#39;kakaara&#39;, &#39;kayaana&#39;]</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p><code>kaiaeaaa</code>. <code>kayaaa</code>. <code>kariaa</code>. These satisfy the verifier perfectly and have stopped being names. The model found that the cheapest route to reward is <code>k</code>, then a pile of vowels, then <code>a</code>, and the verifier has no opinion about whether the result is pronounceable.</p>
+<p><strong>This is reward hacking</strong>, also called Goodhart's law: the model optimizes the measure, not the thing the measure was standing in for. It is the central practical risk of RL, and here it took eleven seconds to appear.</p>
+<p><strong>Measuring the drift.</strong> "It stopped looking like a name" can be quantified: score the policy's samples under the <em>frozen base model</em> and see how surprised it is. Low is name-like, high is drift.</p>
+<p class="lbl lbl-out"><strong>What you should see</strong>, comparing KL penalty strengths at 600 steps:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>β (KL penalty)</th>
+<th>Reward</th>
+<th>Naturalness (NLL under base model)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0 (no leash)</td>
+<td>1.8% → <strong>95.7%</strong></td>
+<td>1.942 → 2.218</td>
+</tr>
+<tr>
+<td>2.0 (strong leash)</td>
+<td>1.8% → <strong>62.1%</strong></td>
+<td>1.942 → <strong>2.000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="tag tag-ok">verified</span></p>
+<p>There is the trade-off, measured. Without a leash the policy gets 96% of the reward and drifts furthest from natural text. With a strong leash it stays close to the base model's notion of a name and gives up a third of the reward.</p>
+<p><strong>An honest note.</strong> I first ran this comparison at β = 0.02 and β = 0.2 and got results indistinguishable from β = 0. Printing the loss components explained why: at β = 0.2 the KL term was worth about 0.01 against a policy-gradient term of about 0.03, too small to matter, while at β = 2.0 the KL term ends up roughly <strong>59× larger</strong> than the policy-gradient term and dominates completely. β is not a dial with a natural scale; it has to be tuned against the size of your actual gradient signal. <span class="tag tag-ok">verified</span></p>
+<p><strong>Whether degeneration happens at all is seed-dependent.</strong> On another run with the same settings the model reached 97% while still producing <code>kamala</code>, <code>kamara</code>, <code>koda</code>. Reward hacking is a tendency, not a certainty, which is precisely what makes it dangerous to check for by eye.</p>
+<h3 id="117-sft-against-rl-on-the-identical-task">11.7 SFT against RL, on the identical task</h3>
+<p>Chapter 10 and this chapter targeted the same behaviour with the same base model, which makes them directly comparable.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Demonstrations needed</th>
+<th>Target rate</th>
+<th>Distinct names per 512 samples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base model</td>
+<td>—</td>
+<td>0.6–1.4%</td>
+<td>509</td>
+</tr>
+<tr>
+<td>SFT, 493 demonstrations</td>
+<td>493</td>
+<td>96.5%</td>
+<td>378</td>
+</tr>
+<tr>
+<td>SFT, 20 demonstrations</td>
+<td>20</td>
+<td>98.2%</td>
+<td><strong>53</strong></td>
+</tr>
+<tr>
+<td><strong>GRPO, no demonstrations</strong></td>
+<td><strong>0</strong></td>
+<td><strong>96.1%</strong></td>
+<td><strong>376</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="tag tag-ok">verified</span></p>
+<p><strong>GRPO matched SFT-with-493-demonstrations on both axes while using none.</strong> It only ever saw a function that returns 0 or 1.</p>
+<p>That is the case for RL in one table. And the row above it is the case against: SFT on 20 demonstrations scored <em>highest</em> on the target while collapsing to 53 distinct outputs. Any single metric can be satisfied by a model that has quietly destroyed everything you were not measuring.</p>
+<h3 id="118-when-there-is-nothing-to-verify">11.8 When there is nothing to verify</h3>
+<p>Most of what people want from an assistant cannot be checked by a function. Is this email polite? Is this explanation clear? There is no grader to write.</p>
+<p>The answer is to learn the grader from people. Show a human two responses, ask which is better, and fit a <strong>reward model</strong> to those comparisons. Then optimize against it.</p>
+<p><strong>DPO</strong> (Direct Preference Optimization) simplifies this by removing the separate reward model. It optimizes the policy directly on preference pairs, using a loss that raises the policy's log-probability of the preferred response relative to the rejected one, both measured against the frozen reference. The quantity it maximizes is the <strong>implicit reward margin</strong>:</p>
+<pre class="output"><code>margin = [log π(winner) − log π_ref(winner)] − [log π(loser) − log π_ref(loser)]
+loss   = −log sigmoid(β × margin)</code></pre>
+<p>Read it as: "the winner should have gained more probability, relative to where we started, than the loser did."</p>
+<p><strong>Run it</strong> on the SFT model from Chapter 10. The judge here prefers the shorter of two sampled responses, standing in for a human labeller so the experiment runs unattended:</p>
+<div class="sourceCode codewrap" id="cb159"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> judge(a, b):</span>
+<span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Prefer the shorter response. A stand-in for a human comparison.&quot;&quot;&quot;</span></span>
+<span id="cb159-3"><a href="#cb159-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (a, b) <span class="cf">if</span> <span class="bu">len</span>(a) <span class="op">&lt;=</span> <span class="bu">len</span>(b) <span class="cf">else</span> (b, a)</span>
+<span id="cb159-4"><a href="#cb159-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb159-5"><a href="#cb159-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">300</span>):</span>
+<span id="cb159-6"><a href="#cb159-6" aria-hidden="true" tabindex="-1"></a>    qs <span class="op">=</span> random.sample(prompts, <span class="dv">8</span>)</span>
+<span id="cb159-7"><a href="#cb159-7" aria-hidden="true" tabindex="-1"></a>    pairs <span class="op">=</span> rollout(qs)                      <span class="co"># two sampled responses per prompt</span></span>
+<span id="cb159-8"><a href="#cb159-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> q, (a, b) <span class="kw">in</span> <span class="bu">zip</span>(qs, pairs):</span>
+<span id="cb159-9"><a href="#cb159-9" aria-hidden="true" tabindex="-1"></a>        w, l <span class="op">=</span> judge(a, b)</span>
+<span id="cb159-10"><a href="#cb159-10" aria-hidden="true" tabindex="-1"></a>        pi_w, pi_l <span class="op">=</span> seq_logp(policy, chat(q), w), seq_logp(policy, chat(q), l)</span>
+<span id="cb159-11"><a href="#cb159-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb159-12"><a href="#cb159-12" aria-hidden="true" tabindex="-1"></a>            rf_w, rf_l <span class="op">=</span> seq_logp(ref, chat(q), w), seq_logp(ref, chat(q), l)</span>
+<span id="cb159-13"><a href="#cb159-13" aria-hidden="true" tabindex="-1"></a>        margin <span class="op">=</span> (pi_w <span class="op">-</span> rf_w) <span class="op">-</span> (pi_l <span class="op">-</span> rf_l)</span>
+<span id="cb159-14"><a href="#cb159-14" aria-hidden="true" tabindex="-1"></a>        losses.append(<span class="op">-</span>F.logsigmoid(BETA <span class="op">*</span> margin))</span></code></pre></div>
+<p class="lbl lbl-out"><strong>What you should see:</strong></p>
+<pre class="output"><code>  dpo   25  loss 0.7608  margin -0.325  pref-acc(last40)   52%  [23s]
+  dpo  100  loss 0.6001  margin +2.890  pref-acc(last40)   72%  [86s]
+  dpo  175  loss 0.3970  margin +7.580  pref-acc(last40)   78%  [148s]
+  dpo  299  loss 0.6376  margin +1.570  pref-acc(last40)   70%  [240s]
+
+mean response length: 193 -&gt; 42 characters (-79%)
+
+Q: Give three tips for staying healthy.
+A: &#39;1. Exercise regularly and stay hydrated.&#39;
+
+Q: What is the capital of France?
+A: &#39;France&#39;</code></pre>
+<p><span class="tag tag-ok">verified</span></p>
+<p><strong>It learned the preference,</strong> with preference accuracy climbing from 52%, which is chance, to around 75%.</p>
+<p><strong>And then it gamed it, catastrophically.</strong> Asked for the capital of France, the model answers <strong>"France"</strong>. That is a very short response. The judge rewarded shortness and got shortness, in the most literal possible way. Asked for three tips it now gives one.</p>
+<p>This is the same failure as section 11.6, in the domain where it is most dangerous. A verifier for maths is hard to fool because arithmetic is not negotiable. A judge for "good response" is a proxy, and optimizing hard against a proxy destroys it. This is why RLHF is run gently, with a strong KL leash and few steps, and why the little book describes preference signal as shallow and easily gamed <code><span class="tag tag-book">little-book · ch5</span></code>.</p>
+<p><strong>A methodological note you should hold me to.</strong> My first DPO run reported a 13% reduction in response length. That number was mostly an artifact: I had batched generation with right padding, which is wrong for decoder-only models, so the measurement was corrupted. With left padding the same run showed 2%, indistinguishable from noise, and only a stronger configuration produced the unmistakable 79%. Three different numbers from the same experiment, two of them wrong. <span class="tag tag-ok">verified</span></p>
+<h3 id="119-why-any-of-this-can-exceed-its-teachers">11.9 Why any of this can exceed its teachers</h3>
+<p>Karpathy reaches for AlphaGo, and it is the best argument in the lecture. <code><span class="tag tag-src">transcript</span></code></p>
+<p>DeepMind's system learned Go by playing itself, with the only signal being whether it won. In the AlphaGo paper there is a plot comparing a version trained by imitating human expert moves against a version trained by reinforcement learning. The imitation version approaches human strength and stops there, which is the ceiling of Chapter 10. The RL version goes past it and keeps going.</p>
+<p>The famous demonstration is move 37 of game two against Lee Sedol: a move human commentators initially read as a mistake, and which turned out to be the winning idea. No human demonstrator would have played it, so no amount of imitation learning could have produced it.</p>
+<p><strong>That is the whole promise of this chapter.</strong> Imitation is bounded by the demonstrator. Practice against a reward is not.</p>
+<p><strong>And the whole caveat, in the same breath:</strong> move 37 was found in a domain with a perfect, incorruptible verifier — the rules of Go. In domains without one, what you get is not move 37. It is <code>kaiaeaaa</code>, and it is "France".</p>
+<h3 id="1110-what-the-field-is-arguing-about-now">11.10 What the field is arguing about now</h3>
+<p>RLVR is roughly two years old and unsettled. What follows is the current state, drawn from the little book's survey <code><span class="tag tag-book">little-book · §5.3</span></code>, and it will date faster than anything else in this book.</p>
+<p><strong>Does RL create new capabilities, or surface existing ones?</strong> Genuinely contested. Some work shows RLVR improving pass@1 while leaving pass@8 unchanged, which suggests it is learning to <em>select</em> an answer the base model could already produce rather than learning anything new. Later work with longer training and more diverse tasks reports models exceeding their base counterparts even at large k <code><span class="tag tag-book">little-book · §5.3</span></code>. Anyone telling you this is settled is overselling. <code><span class="tag tag-unc">uncertain</span></code></p>
+<p><strong>High-entropy tokens do the work.</strong> RLVR mostly affects tokens where the model was uncertain: the forking points in a reasoning chain, words like "therefore," "perhaps," "however" <code><span class="tag tag-book">little-book · §5.3</span></code>. Several variants (DAPO, JustRL, Lite-PPO) push harder on exactly those tokens by raising the upper clipping ratio.</p>
+<p><strong>Length normalization is disputed.</strong> GRPO divides each trajectory's gradient by its length. Some argue this is an artifact inherited from supervised learning that biases toward short correct answers and long incorrect ones; others argue it usefully encourages longer reasoning chains <code><span class="tag tag-book">little-book · §5.3</span></code>.</p>
+<p><strong>Reward shaping for length.</strong> Reasoning models over-expand their thinking on trivial prompts, so people add explicit length penalties. Applying one too early or too strongly collapses exploration and accuracy; more refined schemes vary the penalty with task difficulty, so the model is forced to be terse on easy prompts and allowed to think on hard ones <code><span class="tag tag-book">little-book · §5.3</span></code>.</p>
+<p><strong>Sequence-level objectives.</strong> The MDP can be reframed so the whole response is a single action rather than one action per token. This is arguably more principled for RLVR, and it is unstable in the naive form because the sequence-level importance ratio's variance grows multiplicatively with length. GSPO handles it with a length-normalized ratio <code><span class="tag tag-book">little-book · §5.3</span></code>.</p>
+<h3 id="1111-why-this-is-mostly-a-systems-problem">11.11 Why this is mostly a systems problem</h3>
+<p>"While the pseudocode of GRPO fits in fewer than 30 lines, implementing an efficient RLVR training loop is a substantial systems engineering effort" <code><span class="tag tag-book">little-book · §5.4</span></code>. My implementation above is about 30 lines and it is a toy; the gap is infrastructure.</p>
+<p>An RLVR system is two fleets of machines with opposite characteristics <code><span class="tag tag-book">little-book · §5.4</span></code>:</p>
+<ul>
+<li>The <strong>trainer</strong> consumes rollouts and updates weights. Compute-bound. Megatron or TorchTitan.</li>
+<li>The <strong>inference engine</strong> generates rollouts by running the policy. Memory-bandwidth-bound. vLLM or SGLang. Typically allocated several times more GPUs than the trainer, around 3:1.</li>
+</ul>
+<p>They must exchange weights and rollouts continuously without either side idling. Three optimizations matter, and each trades algorithmic purity for hardware utilization:</p>
+<ul>
+<li><strong>Asynchrony</strong>: let the trainer work while rollouts are still being generated.</li>
+<li><strong>Continuous batching</strong>: refill a rollout slot the moment one finishes, rather than waiting for the slowest in the batch.</li>
+<li><strong>In-flight weight updates</strong>: have the inference engine pull new weights as soon as they exist, so a single rollout may be generated partly by one policy and partly by the next.</li>
+</ul>
+<p>Every one of these makes the data <strong>off-policy</strong>: collected under a policy that is no longer the one being updated, which is exactly what the PPO ratio and clipping exist to tolerate. And the problem compounds, because as training progresses the model produces longer reasoning chains, making inference disproportionately more expensive thanks to attention's quadratic cost in sequence length <code><span class="tag tag-book">little-book · §5.4</span></code>.</p>
+<p>There is a subtler issue that connects back to Chapter 9's precision work: the training and inference engines are different pieces of software and do not produce bit-identical results. With mixture-of-experts models a tiny numerical difference can route a token to a different expert, so the rollout policy and the training policy diverge despite sharing weights, biasing the gradient. One fix is a second importance-sampling ratio that corrects for the mismatch explicitly <code><span class="tag tag-book">little-book · §5.4</span></code>.</p>
+<blockquote class="q-phd">
+<p><strong>For the PhD in the room.</strong> A few things worth being precise about. GRPO's group-mean baseline is unbiased in the same way any action-independent baseline is, but dividing by the group standard deviation is not innocent: it rescales the effective step size per prompt by the inverse difficulty spread, which is part of why Dr. GRPO removes it. The KL term as implemented above is the k1 estimator (log π − log π_ref), which is unbiased for the KL but high variance and can go negative on a sample; the k3 estimator is the usual production choice. The clipping in PPO/GRPO is not a trust region in the TRPO sense — it provides no monotonic improvement guarantee, it is a heuristic surrogate that happens to work, and the performance-difference lemma it approximates is only exact when the state distributions of the two policies coincide, which is why the sequence-level formulation is cleaner: there the initial state distribution depends only on the prompt dataset, so that approximation becomes exact <code><span class="tag tag-book">little-book · §5.3</span></code>. Finally, the credit-assignment structure here is degenerate in an interesting way: with a terminal-only reward and deterministic transitions, every token in a trajectory receives the same advantage, so GRPO assigns credit uniformly across a response and relies on averaging over many rollouts to sort out which tokens actually mattered.</p>
+</blockquote>
+<h3 id="exercises-10">Exercises</h3>
+<ol type="1">
+<li><strong>Change the verifier</strong> to something else, names ending in <code>-son</code>, names of exactly six letters, and confirm GRPO finds it. This is the point: the algorithm never knew what the old rule was.</li>
+<li><strong>Make the task impossible at first.</strong> Require names starting with <code>xq</code>. Watch the reward stay at zero forever and explain why, using the step-0 argument in 11.5.</li>
+<li><strong>Sweep β</strong> across 0, 0.02, 0.2, 2.0, 20.0 and plot reward against naturalness. Find where the leash starts to bind.</li>
+<li><strong>Break the baseline.</strong> Replace <code>A = R - R.mean()</code> with <code>A = R</code> and observe the training destabilize. That one line is the variance-reduction trick from 11.4.</li>
+<li><strong>Shrink the group.</strong> Try G = 4 instead of 64. The mean of four samples is a noisy baseline; see how much slower learning becomes.</li>
+<li><strong>Fix the DPO judge.</strong> Replace "prefer shorter" with something that rewards following the instruction, for example checking that a request for three items produces three items, and see whether "France" stops happening.</li>
+</ol>
+<h3 id="troubleshooting-9">Troubleshooting</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reward stays exactly 0</td>
+<td>No rollout ever succeeds, so every advantage is 0. Make the task easier or the group larger</td>
+</tr>
+<tr>
+<td>Reward stuck at the starting rate</td>
+<td>All rewards identical within each group; same problem, no signal</td>
+</tr>
+<tr>
+<td>Output becomes gibberish</td>
+<td>Reward hacking. Raise β, lower the learning rate, stop earlier</td>
+</tr>
+<tr>
+<td>Reward climbs then collapses</td>
+<td>Learning rate too high; the clipped ratio cannot save you from a bad optimizer setting</td>
+</tr>
+<tr>
+<td>KL term appears to do nothing</td>
+<td>It is too small relative to the policy-gradient term. Print both before tuning β</td>
+</tr>
+<tr>
+<td>Loss goes negative</td>
+<td>Expected for the policy-gradient term; it is not a likelihood and its sign means nothing on its own</td>
+</tr>
+<tr>
+<td>Generation and training disagree</td>
+<td>Different padding, sampling settings, or precision between the two paths</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="30-second-version-10">30-second version</h3>
+<p>Fine-tuning copies demonstrations and is capped by whoever wrote them. Reinforcement learning replaces the demonstrations with a score: generate several attempts, keep what scored above the group average, and repeat. That is GRPO, and 30 lines of it took a model from satisfying a rule 0.6% of the time to 96%, with zero examples of the rule. Where the score can be checked mechanically, as in maths and code, this is how reasoning models are made. Where it cannot, you fit a judge to human preferences and the model games it: mine learned that short answers were preferred and started replying "France" when asked for the capital of France.</p>
+<h1 id="part-v--why-it-matters">PART V — WHY IT MATTERS</h1>
+<h2 id="51-what-you-can-do-afterward">5.1 What you can do afterward</h2>
 <p>Concrete capabilities, not vague ones. After working through this book you can:</p>
 <ol type="1">
 <li><strong>Read a paper's method section and implement it.</strong> The course covers what most papers assume: attention, residuals, normalization, initialization, optimizers, schedules.</li>
@@ -3146,7 +3763,7 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <li><strong>Make training faster deliberately.</strong> Recognize a memory-bound workload and apply mixed precision, compilation, and better attention kernels.</li>
 <li><strong>Judge scale claims.</strong> You have trained models at 41, 12,000, and 10.79 million parameters, so 175 billion is a number you have a feel for rather than a headline.</li>
 </ol>
-<h2 id="42-who-uses-this">4.2 Who uses this</h2>
+<h2 id="52-who-uses-this">5.2 Who uses this</h2>
 <ul>
 <li><strong>Engineers moving into machine learning</strong>, the primary audience.</li>
 <li><strong>Researchers and students</strong>, as a fast on-ramp before formal coursework.</li>
@@ -3154,7 +3771,7 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <li><strong>The nanoGPT lineage.</strong> The Chapter 9 code is essentially <code>nanoGPT</code>, widely used as a starting point for small-scale training and research.</li>
 </ul>
 <p>A representative Hacker News comment calls it "by far the best, most intuition building, highest signal-to-noise ratio" among deep learning resources (<a href="https://news.ycombinator.com/item?id=34591998">HN</a>).</p>
-<h2 id="43-the-competitive-landscape">4.3 The competitive landscape</h2>
+<h2 id="53-the-competitive-landscape">5.3 The competitive landscape</h2>
 <div class="tablewrap"><table>
 <thead>
 <tr>
@@ -3204,17 +3821,17 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 </tbody>
 </table></div>
 <p>The honest summary: this course owns the "build every piece yourself, bottom-up, in code" position more thoroughly than anything else free. It is not the fastest route to a product and not a substitute for a degree.</p>
-<h2 id="44-limitations-stated-fairly">4.4 Limitations, stated fairly</h2>
+<h2 id="54-limitations-stated-fairly">5.4 Limitations, stated fairly</h2>
 <ul>
 <li><strong>Narrow architecture coverage.</strong> Everything aims at transformers and language. No convolutional vision networks in depth, no diffusion models, no reinforcement learning, no graph networks. A Hacker News commenter makes exactly this criticism.</li>
-<li><strong>Stops before ChatGPT.</strong> Pretraining only. Supervised fine-tuning and RLHF are in Karpathy's separate lectures, not the numbered course.</li>
+<li><strong>Stops before ChatGPT.</strong> The nine lectures cover pretraining only; supervised fine-tuning and RL are in a separate lecture of Karpathy's. Chapters 10 and 11 of this book cover them, but they are an addition to the course rather than part of it.</li>
 <li><strong>Occasionally too gentle for experts.</strong> From the same thread: "Karpathy has a great intuitive style, but sometimes it's too dumbed down."</li>
 <li><strong>Prerequisites are underspecified.</strong> The page says "intro-level math," but Chapters 4 and 5 assume real comfort with the multivariable chain rule and tensor shapes. This book exists partly to fill that gap.</li>
 <li><strong>Hardware wall at Chapter 7.</strong> Everything before runs on a laptop; Chapters 7 and 9 want GPUs.</li>
-<li><strong>Some content has aged.</strong> BatchNorm is a 2015 technique presented partly as history. Rotary position embeddings, grouped-query attention, mixture-of-experts routing, and state-space models are not covered. See section 5.3 for what has changed since.</li>
+<li><strong>Some content has aged.</strong> BatchNorm is a 2015 technique presented partly as history. Rotary position embeddings, grouped-query attention, mixture-of-experts routing, and state-space models are not covered. See section 6.3 for what has changed since.</li>
 <li><strong>Passivity is the main failure mode.</strong> Watching produces recognition, not ability.</li>
 </ul>
-<h2 id="45-a-study-plan-that-works">4.5 A study plan that works</h2>
+<h2 id="55-a-study-plan-that-works">5.5 A study plan that works</h2>
 <ol type="1">
 <li><strong>Budget 40 to 60 hours,</strong> not 15. The videos are 15 hours; the work is typing, breaking, and fixing.</li>
 <li><strong>Type the code.</strong> No copy-paste. The friction is the lesson.</li>
@@ -3224,13 +3841,13 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <li><strong>Keep a number log.</strong> Every validation loss with the change that produced it. That log is the real work product of this field.</li>
 <li><strong>If the maths blocks you,</strong> watch 3Blue1Brown's calculus and neural network series, then come back.</li>
 </ol>
-<h1 id="part-v--explaining-it-to-others">PART V — EXPLAINING IT TO OTHERS</h1>
+<h1 id="part-vi--explaining-it-to-others">PART VI — EXPLAINING IT TO OTHERS</h1>
 <p><em>The test of understanding is being able to pitch it at any level. Here are three scripts: for anyone, for a curious colleague, and for a specialist.</em></p>
-<h2 id="51-the-30-second-version-for-anyone">5.1 The 30-second version, for anyone</h2>
+<h2 id="61-the-30-second-version-for-anyone">6.1 The 30-second version, for anyone</h2>
 <p>ChatGPT and everything like it are built out of a handful of simple ideas that fit on a whiteboard. A researcher named Andrej Karpathy recorded about 15 hours of video building one from an empty file, explaining every line, ending with a working copy of GPT-2 that anyone can train for about $10 of rented computer time.</p>
 <p>The core idea: the machine makes a guess, measures how wrong it was as a single number, works out which of its millions of internal dials pushed that number up, nudges every dial slightly the other way, and repeats a few million times. That is the whole of how it learns. The famous "transformer" part is one addition on top: as it reads, each word looks back at the earlier words and decides for itself which ones matter.</p>
 <p>Bigger versions are not different in kind. They are the same design with about a million times more text and ten thousand times more dials.</p>
-<h2 id="52-teaching-a-six-year-old-as-a-script">5.2 Teaching a six-year-old, as a script</h2>
+<h2 id="62-teaching-a-six-year-old-as-a-script">6.2 Teaching a six-year-old, as a script</h2>
 <p>This is the version to use with an actual child, or any adult who says they are "not technical." It works because every step is something they have physically done.</p>
 <p><strong>1. The guessing game.</strong> "I'm thinking of the next letter in a word. E-L-E-P-H-A-... what comes next?" They say N. "How did you know?" They will say something like "because that's how the word goes." That is a language model. The computer plays this game, forever, on the whole internet.</p>
 <p><strong>2. The knobs.</strong> "Imagine a machine with a thousand knobs. You put in E-L-E-P-H-A and it says Z. That's wrong. So you turn each knob a tiny bit, and try again. And again. A million times." Show them a radio dial or a tap if there is one nearby. Let them turn something.</p>
@@ -3238,7 +3855,7 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <p><strong>4. Why it makes mistakes.</strong> "The computer never sees letters. Before it looks at anything, another little program chops writing into pieces and turns each piece into a number. So when you ask how many r's are in strawberry, it's like asking you to count the letters in a word you only saw for half a second, from far away." This is the honest explanation for the failure they are most likely to have seen.</p>
 <p><strong>5. The one thing to leave them with.</strong> "Nobody told it the rules. It looked at millions of examples and worked out the patterns by guessing and being corrected. Like you did with talking."</p>
 <p><strong>What to avoid:</strong> the word "neuron" (it invites a brain metaphor that is wrong and hard to unwind), any mention of matrices, and the claim that it thinks or understands. Say "it guesses very well because it has seen a lot," which is both true and enough.</p>
-<h2 id="53-talking-to-a-specialist">5.3 Talking to a specialist</h2>
+<h2 id="63-talking-to-a-specialist">6.3 Talking to a specialist</h2>
 <p>For a conversation with someone who has a PhD in this field, you need three things: correct vocabulary, awareness of what the course simplifies, and knowledge of what has changed since it was recorded. Here is all three.</p>
 <p><strong>Where the course simplifies, and what the specialist knows instead:</strong></p>
 <div class="tablewrap"><table>
@@ -3283,7 +3900,7 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <li><strong>Activations.</strong> <strong>SwiGLU</strong> and other gated units have replaced the plain ReLU feed-forward block.</li>
 <li><strong>Sparsity.</strong> <strong>Mixture-of-experts</strong> routes each token to a few of many feed-forward blocks, so parameter count and per-token compute decouple.</li>
 <li><strong>Beyond attention.</strong> <strong>State-space models</strong> (S4, Mamba) pursue subquadratic sequence mixing while keeping content dependence, which is precisely the trade-off Chapter 6's fixed tree versus Chapter 7's learned gather sets up.</li>
-<li><strong>Post-training.</strong> The stages the course omits, supervised fine-tuning then RLHF or DPO, plus reinforcement learning on verifiable rewards for reasoning models, are now where most of the perceived capability difference between models is made.</li>
+<li><strong>Post-training.</strong> Supervised fine-tuning, then RLHF or DPO, plus RL on verifiable rewards for reasoning models, is now where most of the perceived capability difference between models is made. Chapters 10 and 11 cover this ground, including a GRPO implementation you can run.</li>
 </ul>
 <p><strong>Five questions that show you understand the material</strong>, worth asking a specialist rather than asserting at them:</p>
 <ol type="1">
@@ -3293,7 +3910,7 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <li>"If tokenization causes the arithmetic and spelling failures, why have byte-level models not displaced BPE yet? Is it purely the sequence-length cost?"</li>
 <li>"Chinchilla says 20 tokens per parameter is compute-optimal, but everyone overtrains small models for inference economics. Where do you think the real optimum sits once serving cost is in the objective?"</li>
 </ol>
-<h2 id="54-the-2-to-3-minute-version-for-a-curious-colleague">5.4 The 2-to-3-minute version, for a curious colleague</h2>
+<h2 id="64-the-2-to-3-minute-version-for-a-curious-colleague">6.4 The 2-to-3-minute version, for a curious colleague</h2>
 <p>Karpathy's <em>Neural Networks: Zero to Hero</em> is nine lectures, roughly 15 hours, that build modern language models from an empty Python file, with no libraries hiding the important parts. The premise is that a decade of deep learning has been compressed into <code>model.fit()</code>, and anyone who wants to actually diagnose these systems has to open it back up.</p>
 <p><strong>Lecture 1</strong> builds an automatic differentiation engine in 100 lines: every arithmetic operation records where it came from, then the chain rule runs backward through that record to work out how sensitive the final error is to every parameter. That is backpropagation, and it stops being mysterious in an afternoon.</p>
 <p><strong>Lectures 2 through 6</strong> build a name generator, improving it in steps that each teach one idea. A counting table of letter pairs scores a loss of 2.4544. A one-layer network trained by gradient descent scores the same, which is the point: it is the same model learned a harder way, and the counting version cannot scale, since ten letters of context would need a table of 205 trillion cells. Then learned embeddings and a wider window take it to 2.26. Then fixing the initialization takes it to 2.15, after a diagnostic reveals the network started with a loss of 27.88 where arithmetic said 3.30, with 61% of its neurons pinned flat and unable to learn. Then a deeper tree-shaped network with 8 characters of context crosses below 2.0. Along the way: mini-batches, finding learning rates by sweeping them, train/dev/test discipline, and a set of diagnostic plots that catch problems no loss curve shows.</p>
@@ -3305,12 +3922,16 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <p>Every term used in this book, defined in one line.</p>
 <p><strong>Activation</strong> — a value flowing forward through the network, output by a neuron.
 <strong>AdamW</strong> — an optimizer that adapts each parameter's step size using running averages of its gradient and squared gradient, with decoupled weight decay.
+<strong>Advantage</strong> — how much better an outcome was than expected; the return minus a baseline.
+<strong>Agent</strong> — in RL, the thing making decisions. For an LLM, the model itself.
 <strong>Attention</strong> — a mechanism letting each position gather information from other positions, weighted by content-based relevance.
 <strong>Autoregressive</strong> — generating one token at a time, feeding each output back in as input.
 <strong>Backpropagation</strong> — computing gradients by applying the chain rule backward through a computation graph.
 <strong>Batch</strong> — the group of examples processed together in one step.
 <strong>BatchNorm</strong> — normalizing each neuron's output across the examples in a batch.
 <strong>Bias</strong> — a per-neuron offset added regardless of input.
+<strong>Behaviour cloning</strong> — learning by imitating demonstrations. SFT is behaviour cloning.
+<strong>Baseline</strong> — a reference value subtracted from the return to reduce variance in a policy gradient.
 <strong>Bigram</strong> — a pair of adjacent symbols.
 <strong>Block size</strong> — the context length; how many previous tokens the model can see.
 <strong>BPE (Byte Pair Encoding)</strong> — building a vocabulary by repeatedly merging the most frequent adjacent pair.
@@ -3318,21 +3939,26 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <strong>Byte</strong> — a number from 0 to 255; the unit UTF-8 uses.
 <strong>Causal mask</strong> — the triangular mask preventing a position from attending to the future.
 <strong>Chain rule</strong> — sensitivities multiply along a chain of operations.
+<strong>Credit assignment</strong> — working out which of many actions earned a reward that arrived only at the end.
 <strong>Cross-entropy loss</strong> — average negative log probability assigned to the correct answers. Lower is better.
 <strong>Derivative</strong> — how much an output moves when an input is nudged.
+<strong>DPO (Direct Preference Optimization)</strong> — learning from preference pairs directly, without fitting a separate reward model.
 <strong>Dropout</strong> — randomly zeroing a fraction of activations during training.
 <strong>Embedding</strong> — a learned vector representing a discrete item such as a character or token.
 <strong>Epoch</strong> — one complete pass over the training data.
 <strong>Fan-in</strong> — the number of inputs feeding a neuron.
 <strong>FlashAttention</strong> — an exact attention implementation that avoids materializing the full attention matrix in memory.
 <strong>Forward pass</strong> — computing the model's output from its input.
+<strong>GRPO (Group Relative Policy Optimization)</strong> — policy optimization that replaces a learned critic with the mean reward of a group of rollouts from the same prompt.
 <strong>Gradient</strong> — the collection of derivatives of the loss with respect to every parameter.
 <strong>Gradient accumulation</strong> — simulating a large batch by summing gradients over several small ones before updating.
 <strong>Gradient clipping</strong> — capping the size of an update so one bad batch cannot destabilize training.
 <strong>GPU</strong> — hardware with thousands of simple cores that perform the same arithmetic simultaneously on different data.
 <strong>HellaSwag</strong> — a multiple-choice benchmark of sentence completions, easy for humans, hard for small models.
+<strong>Hallucination</strong> — a confident, fluent, false statement.
 <strong>Hyperparameter</strong> — a setting you choose rather than learn: learning rate, layer count, batch size.
 <strong>Kaiming initialization</strong> — scaling initial weights by <code>gain/√fan_in</code> to keep activation spread constant across layers.
+<strong>KL penalty</strong> — a term keeping a trained policy close to a frozen reference, preventing collapse into degenerate text.
 <strong>LayerNorm</strong> — normalizing across the features of a single example. Used in transformers.
 <strong>Learning rate</strong> — the step size in gradient descent.
 <strong>Logits</strong> — raw network outputs before softmax.
@@ -3345,21 +3971,30 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 <strong>One-hot</strong> — representing item <em>k</em> as a vector of zeros with a single 1 at position <em>k</em>.
 <strong>Overfitting</strong> — memorizing training data at the expense of new data.
 <strong>Parameter</strong> — a number the model learns; a weight or a bias.
+<strong>Policy</strong> — a rule mapping a state to a distribution over actions. A language model is already one.
 <strong>Perplexity</strong> — <code>exp(loss)</code>; the effective number of choices the model is deciding between.
 <strong>Position embedding</strong> — a learned vector per position, added so attention can tell order.
 <strong>Pre-norm</strong> — applying normalization before each sub-block, keeping the residual path clean.
 <strong>Query, key, value</strong> — what a token is looking for, what it advertises, and what it contributes.
+<strong>Reference model</strong> — the frozen copy a policy is kept close to during RL, usually the SFT model.
+<strong>Reward hacking</strong> — scoring well on the measure while defeating its purpose.
+<strong>Reward model</strong> — a model trained to predict human preferences, used as a stand-in for a reward function where none can be written.
+<strong>RLHF</strong> — Reinforcement Learning from Human Feedback: RL against a reward model fitted to human comparisons.
+<strong>RLVR</strong> — Reinforcement Learning with Verifiable Rewards: RL where correctness is checked mechanically.
+<strong>Rollout</strong> — one complete generated trajectory, from prompt to end of response.
 <strong>Regularization</strong> — any penalty or noise that discourages the model from fitting the training data too exactly.
 <strong>Residual connection</strong> — adding a block's input to its output, giving gradients a clean path backward.
 <strong>Saturation</strong> — a neuron pinned at the flat extremes of its nonlinearity, where gradient stops flowing.
 <strong>Seed</strong> — a number fixing the random generator so results are reproducible.
 <strong>Shape</strong> — the list of sizes along a tensor's dimensions.
 <strong>Smoothing</strong> — adding a small count everywhere so nothing has probability exactly zero.
+<strong>SFT (supervised fine-tuning)</strong> — training a pretrained model on demonstrations of a desired behaviour.
 <strong>Softmax</strong> — converting arbitrary numbers into a probability distribution by exponentiating and normalizing.
 <strong>Standard deviation</strong> — a measure of spread around the average.
 <strong>Symmetry breaking</strong> — initializing with small randomness so identical units differentiate.
 <strong>Temperature</strong> — a divisor on logits before softmax; higher makes sampling more random.
 <strong>Tensor</strong> — a multidimensional array of numbers.
+<strong>Terminal reward</strong> — a reward given only at the end of an episode, not step by step.
 <strong>Token</strong> — the atomic unit of text a model reads; a character, word piece, or byte.
 <strong>Topological sort</strong> — ordering a graph so every node comes after everything it depends on.
 <strong>Transformer</strong> — the architecture built from stacked attention and feed-forward blocks with residual connections and normalization.
@@ -3540,6 +4175,13 @@ bfloat16: 34.7 ms per matmul, 31.7 TFLOPS</code></pre>
 </ul>
 <p><strong>Community notes and learner reports</strong>, used for the troubleshooting and "where people get stuck" sections:
 <a href="https://github.com/chizkidd/Karpathy-Neural-Networks-Zero-to-Hero">chizkidd</a> · <a href="https://github.com/MK2112/nn-zero-to-hero-notes">MK2112</a> · <a href="https://github.com/AayushSameerShah/Neural-Net-Zero-to-Hero-with-Andrej">AayushSameerShah</a> · <a href="https://bharatbheesetti.com/posts/zero_to_hero">Bharat Bheesetti's account</a> · <a href="https://medium.com/@sjonany/karpathys-micrograd-walkthrough-535718235150">Stephen Jonany's walkthrough</a> · <a href="https://briansigafoos.com/neural-networks-karpathy/">Brian Sigafoos</a></p>
+<p><strong>Part IV (Chapters 10 and 11) additionally draws on:</strong></p>
+<ul>
+<li>Andrej Karpathy, "Deep Dive into LLMs like ChatGPT" (3h31m): <a href="https://youtu.be/7xTGNNLPyMI">youtu.be/7xTGNNLPyMI</a> — full transcript retrieved (41,116 words) and searched the same way as the nine lectures</li>
+<li>Alexandre Torres Leguet, <em>The Little Book of Reinforcement Learning</em>, V1 June 2026: <a href="https://github.com/alxndrTL/little-book-rl">github.com/alxndrTL/little-book-rl</a> — 154 pages, from the interaction loop through policy gradients to GRPO and AlphaGo Zero. Cited as <span class="tag tag-book">little-book</span> with section numbers. Distributed under CC BY-SA 4.0, non-commercial. The prose here is mine; where I follow its framing or take a claim from it, it is marked</li>
+<li>The Alpaca instruction dataset (52,002 pairs): <a href="https://github.com/tatsu-lab/stanford_alpaca">github.com/tatsu-lab/stanford_alpaca</a></li>
+<li>Papers referenced through the little book: Schulman et al. 2017 (PPO) · Shao et al. 2024 and DeepSeek-AI 2025 (GRPO) · Rafailov et al. 2023 (DPO) · Silver et al. 2017 (AlphaGo Zero) · Wang et al. 2025 (high-entropy tokens) · Yue et al. 2025 and Liu et al. 2025 (whether RL adds capability)</li>
+</ul>
 <p><strong>Reception:</strong> <a href="https://news.ycombinator.com/item?id=34591998">HN 2023</a> · <a href="https://news.ycombinator.com/item?id=46485090">HN recent</a> · <a href="https://news.ycombinator.com/item?id=35408382">HN best lecture series</a></p>
 <p><strong>Papers referenced in the lectures:</strong> Bengio et al. 2003 (neural language model) · Ioffe &amp; Szegedy 2015 (BatchNorm) · He et al. 2015 (Kaiming init; residual networks) · van den Oord et al. 2016 (WaveNet) · Vaswani et al. 2017 (Attention Is All You Need) · Radford et al. 2019 (GPT-2) · Brown et al. 2020 (GPT-3) · Zellers et al. 2019 (HellaSwag) · Kudo 2018 (unigram tokenization) · Santurkar et al. 2018 (how BatchNorm helps) · Hoffmann et al. 2022 (Chinchilla) · Dao et al. 2022 (FlashAttention)</p>
 <p><strong>Method note.</strong> Everything marked <span class="tag tag-ok">verified</span> was executed on a Linux machine with PyTorch 2.11 and Python 3.12 while writing, and the outputs printed here are copied from that run. Six figures I initially predicted turned out to be wrong when measured and were corrected, which is the argument for running code rather than describing it. Figures marked <span class="tag tag-src">transcript</span> come from the lecture captions; auto-captions occasionally mangle numbers, so implausible ones were cross-checked against the repository and the papers. Two known caption artifacts: Karpathy misdates GPT-2 to 2017 in Lecture 7 (corrected in Chapter 7), and caption noise renders some figures oddly, such as "1,24 tokens" for 1,024.</p>

@@ -20,18 +20,20 @@ So this is the same course as a book. Every concept is written down and built up
 
 **Every code block was actually run.** The outputs printed in the book are real outputs from a real machine, not what I assumed would happen. Six numbers I predicted turned out to be wrong when I measured them, and they're corrected in the text. That's the argument for running code rather than describing it.
 
-**It's built to follow along in Jupyter.** Ten notebooks, 69 runnable cells, one per chapter.
+**It's built to follow along in Jupyter.** Twelve notebooks, 76 runnable cells, one per chapter.
+
+**It goes past where the course stops.** The nine lectures end with a pretrained base model. Two extra chapters cover the stages that turn that into ChatGPT: supervised fine-tuning, and reinforcement learning up to GRPO and DPO. Both come with code that runs in seconds.
 
 ## What's inside
 
 | | |
 |---|---|
-| [`textbook.md`](textbook.md) | The whole book, ~31,600 words |
+| [`textbook.md`](textbook.md) | The whole book, ~39,800 words |
 | [`index.html`](index.html) | The web edition, self-contained, light and dark |
-| [`notebooks/`](notebooks/) | 10 Jupyter notebooks, one per chapter, 69 runnable cells |
+| [`notebooks/`](notebooks/) | 12 Jupyter notebooks, one per chapter, 76 runnable cells |
 | [`code/`](code/) | The standalone scripts, if you'd rather not use notebooks |
 
-The nine chapters follow the nine lectures: micrograd and backpropagation, the bigram model, the MLP, initialization and BatchNorm, manual backprop, WaveNet, building GPT, the tokenizer, and reproducing GPT-2.
+Chapters 1 to 9 follow the nine lectures: micrograd and backpropagation, the bigram model, the MLP, initialization and BatchNorm, manual backprop, WaveNet, building GPT, the tokenizer, and reproducing GPT-2. Chapters 10 and 11 go beyond the course, into fine-tuning and reinforcement learning.
 
 ## Getting started
 
@@ -64,6 +66,10 @@ Everything below was measured while writing, not quoted:
 | After fixing initialization | 3.3179 at init, 8.1% saturated, dev loss 2.1481 |
 | GPT on Shakespeare | 10.79M parameters, 44 min on one GPU, **val loss 1.4874** (Karpathy reports 1.48) |
 | Tokenizer cost, English vs Hindi | 4 tokens vs 30, a 7.5× penalty for the same sentence |
+| Fine-tuning GPT-2 | answers in assistant format after 2 minutes, and still says Paris is "in the eastern part of the city" |
+| GRPO, **zero** demonstrations | target behaviour 0.6% → **96.1%** in 11 seconds, from a four-line verifier |
+| GRPO, run too long | reward hacking: `kaiaeaaa`, `kayaaa` — satisfies the rule, stops being a name |
+| DPO with a brevity judge | answers "France" when asked the capital of France |
 
 The Shakespeare model's actual output, and an honest note about how its best checkpoint was at step 4,500 rather than at the end, are both in Chapter 7.
 
@@ -73,7 +79,10 @@ The course, the curriculum, the code it's based on, and the teaching are all And
 
 - Course: <https://karpathy.ai/zero-to-hero.html>
 - His code: <https://github.com/karpathy/nn-zero-to-hero> (MIT)
+- Chapters 10 and 11 also draw on his lecture ["Deep Dive into LLMs like ChatGPT"](https://youtu.be/7xTGNNLPyMI)
 - The lectures themselves are linked at the top of every chapter. Watch them. This book is a companion to them, not a replacement.
+
+The reinforcement learning chapter is indebted to **[The Little Book of Reinforcement Learning](https://github.com/alxndrTL/little-book-rl)** by Alexandre Torres Leguet (CC BY-SA 4.0, non-commercial), which I used as the reference for how the field frames RL for language models, from the interaction loop through to GRPO. Claims taken from it are marked `[little-book]` with a section number. Read it; it is better on RL than I could be in one chapter.
 
 The book was assembled with the help of Claude, working from the transcripts of all nine lectures, community notes, and code executed on my machine. Sources and method are in Appendix D.
 
