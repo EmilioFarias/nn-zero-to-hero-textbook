@@ -26,7 +26,7 @@ So this is the same course as a book. Every concept is written down and built up
 
 | | |
 |---|---|
-| [`textbook.md`](textbook.md) | The whole book, ~31,000 words |
+| [`textbook.md`](textbook.md) | The whole book, ~31,600 words |
 | [`index.html`](index.html) | The web edition, self-contained, light and dark |
 | [`notebooks/`](notebooks/) | 10 Jupyter notebooks, one per chapter, 69 runnable cells |
 | [`code/`](code/) | The standalone scripts, if you'd rather not use notebooks |
